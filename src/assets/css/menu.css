@@ -1,5 +1,4 @@
 .section_menu{
-    background-color: #000;
     padding: 150px 0;
 }
 
@@ -19,7 +18,7 @@
 }
 
 .menu__title{
-    font-family: 'Nasalization';
+    font-family: var(--font-nasalization);
     font-size: 60px;
     text-transform: uppercase;
 }
@@ -29,9 +28,9 @@
     font-weight: 700;
     padding: 15px 27px;
     border-radius: 10px;
-    font-size: 12px;
-    font-weight: 300;
-    background-color: #000;
+    font-size: 14px;;
+    font-weight: 400;
+    background: transparent;
     border: 1px solid #fff;
     color: #fff;
     text-align: center;

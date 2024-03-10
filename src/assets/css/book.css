@@ -54,6 +54,7 @@
 .input__book_text {
     padding: 15px;
     height: 200px;
+    resize: none;
 }
 
 .btn_book {
