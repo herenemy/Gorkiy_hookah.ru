@@ -37,19 +37,15 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-@font-face {
-    font-family: 'striker';
-    src: url(/src/fonts/Striker.otf);
-}
-
-/* @font-face {
-    font-family: 'Charlie Brown M54';
-    src: url(/src/fonts/charlie-brown-m54.ttf);
-} */
-
 body {
 	line-height: 1;
 	font-family: "Nunito", sans-serif;
+}
+input:focus {
+	outline: none;
+}
+textarea:focus {
+	outline: none;
 }
 ol, ul {
 	list-style: none;

@@ -19,10 +19,11 @@
     <link rel="stylesheet" href="src/assets/css/index.css">
     <link rel="stylesheet" href="src/assets/css/header.css">
     <link rel="stylesheet" href="src/assets/css/intro.css">
+    <link rel="stylesheet" href="src/assets/css/book.css">
 </head>
 
 
-<body style="background-color: #000; color: #fff;">
+<body>
 
     <header class="header">
         <div class="container">
@@ -66,6 +67,7 @@
                                 <p class="label__text">Уютная атмосфера и качественное обслуживание</p>
                             </div>
                         </div>
+                        <!-- /.label__row -->
                         <div class="label__row_bottom">
                             <div class="label__col">
                                 <img class="label-icon" src="src/assets/icons/intro/icon-service-bell-50.png" alt="">
@@ -73,14 +75,91 @@
                             </div>
                             <div class="label__col">
                                 <img class="label-icon" src="src/assets/icons/intro/icon-gamepad-50.png" alt="">
-                                <p class="label__text">Только качественный акцизный табак</p>
+                                <p class="label__text">Игровые приставки и настольные игры</p>
+                            </div>
+                        </div>
+                        <!-- /.label__row_bottom -->
+                    </div>
+                    <!-- /.label__container -->
+
+                </div>
+                <!-- /.intro__inner -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- <section class="section section_menu">
+            <div class="container">
+                <div class="menu__inner">
+                    <div class="menu__header">
+                        <h3 class="menu__title">Меню</h3>
+
+                        <div class="menu-categories">
+                            <div class="category__item">
+                                <button class="btn">Барное меню</button>
+                            </div>
+                            <div class="category__item">
+                                <button class="btn">Барное меню</button>
+                            </div>
+                            <div class="category__item">
+                                <button class="btn">Барное меню</button>
+                            </div>
+                            <div class="category__item">
+                                <button class="btn">Барное меню</button>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section> -->
 
+        <section class="section section_book">
+            <div class="container">
+                <div class="book__inner">
+                    <div class="book__wrapper">
+
+                        <div class="book__block_left">
+                            <h2 class="book__title">
+                                забронировать столик
+                            </h2>
+                            <div class="book__title-content">
+                                <p class="book__title-content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat a cupiditate neque animi nulla nihil exercitationem dolor libero cum? Aut eligendi est dolorum iste iusto, dolorem aliquam dolore commodi fugit.</p>
+                                <p class="book__title-content__text">Мы вам перезвоним, если не будет свободного столика!</p>
+                            </div>
+                        </div>
+                        <div class="book__block_right">
+
+                            <form action="/submit">
+                                <div class="book__item">
+                                    <label class="book__text">Имя</label>
+                                    <input type="text" class="input__book" placeholder="Введите ваше имя">
+                                </div>
+                                <div class="book__item">
+                                    <label class="book__text">Номер телефона</label>
+                                    <input type="tel" class="input__book" placeholder="+7 777 777-77-77">
+                                </div>
+                                <div class="book__item">
+                                    <label class="book__text">Дата и время</label>
+                                    <input type="text" class="input__book" placeholder="01.01.24 19:00">
+                                </div>
+                                <div class="book__item">
+                                    <label class="book__text">Количество гостей</label>
+                                    <input type="text" class="input__book" placeholder="Введите количество гостей">
+                                </div>
+                                <div class="book__item">
+                                    <label class="book__text">Пожелания</label>
+                                    <textarea type="text" class="input__book input__book_text" placeholder="Напишите ваши пожелания"></textarea>
+                                </div>
+                                <button class="btn btn_book">забронировать</button>
+                            </form>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
+
     </main>
     
     <!-- <script src="js/index.js"></script> -->

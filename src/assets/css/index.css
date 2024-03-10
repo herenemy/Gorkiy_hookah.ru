@@ -8,9 +8,26 @@
     src: url(../fonts/nasalization-rg.otf);
 }
 
+@font-face {
+    font-family: 'Striker';
+    src: url(../fonts/Striker.otf);
+}
+
+@font-face {
+    font-family: 'Charlie Brown M54';
+    src: url(../fonts/charlie-brown-m54.ttf);
+}
+
 :root {
     --font-nasalization:'Nasalization', sans-serif;
     --font-neuropol: 'Neuropol X Free', sans-serif;
+    --font-charlie-brown: 'Charlie Brown M54', sans-serif;
+    --font-striker: 'Striker', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
 }
 
 .container {

@@ -19,20 +19,28 @@
 }
 
 .btn {
-    font-family: var(--font-neuropol);
-    font-weight: 700;
-    padding: 25px 100px;
     border-radius: 10px;
     background-color: #000;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     color: #fff;
     text-align: center;
+    transition: all .2s ease;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn__order_intro {
+    font-family: var(--font-neuropol);
+    padding: 25px 100px;
+    font-weight: 700;
     text-transform: uppercase;
-    transition: border .2s ease;
+    border: 1px solid #000;
 }
 
 .btn__order_intro:hover {
     border: 1px #fff solid;
+    background-color: #fff;
+    color: #000;
 }
 
 .label__row {
@@ -73,4 +81,5 @@
 
 .label__text {
     font-size: 14px;
+    text-align: center;
 }
