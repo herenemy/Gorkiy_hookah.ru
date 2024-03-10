@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Neuropol X Free';
-    src: url(/src/fonts/neuropol-x-rg.otf);
+    src: url(../fonts/neuropol-x-rg.otf);
 }
 
 @font-face {
     font-family: 'Nasalization';
-    src: url(/src/fonts/nasalization-rg.otf);
+    src: url(../fonts/nasalization-rg.otf);
 }
 
 :root {

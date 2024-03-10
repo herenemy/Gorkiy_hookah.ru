@@ -35,10 +35,6 @@
     border: 1px #fff solid;
 }
 
-.label__container {
-    /* position: relative; */
-}
-
 .label__row {
     display: flex;
     gap: 500px;
