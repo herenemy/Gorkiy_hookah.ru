@@ -1,0 +1,83 @@
+
+.footer_contact{
+    position: relative;
+    padding:150px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__title{
+    font-family: 'Nasalization';
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.footer_liner{
+    position: absolute;
+    left: 300px;
+    top: 225px;
+    transform: rotate(90deg);
+    width: 200px;
+    border: 2px solid gray;
+}
+
+.adres{
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+b{
+    font-weight: 800;
+}
+
+.link_email{
+    margin-bottom: 20px;
+    
+}
+.email{
+    color: #fff;
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.tel{
+    color: #fff;
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.btn_adres{
+    margin-bottom: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    padding: 15px 27px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.btn_adres:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.watch_title{
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.watch{
+    width: 200px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
