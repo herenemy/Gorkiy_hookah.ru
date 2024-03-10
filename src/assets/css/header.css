@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.nav__item {
+    color: #fff;
+}
+
 .nav__item-logo {
 	font-family: 'Striker', sans-serif;
 }
