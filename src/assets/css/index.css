@@ -30,6 +30,10 @@ body {
     color: #fff;
 }
 
+.section {
+    background-color: #000;
+}
+
 .container {
     width: 100%;
     max-width: 1190px;

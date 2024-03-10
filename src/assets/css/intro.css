@@ -38,7 +38,7 @@
 }
 
 .btn__order_intro:hover {
-    border: 1px #fff solid;
+    border: 1px #000 solid;
     background-color: #fff;
     color: #000;
 }
@@ -82,4 +82,5 @@
 .label__text {
     font-size: 14px;
     text-align: center;
+    color: #fff;
 }

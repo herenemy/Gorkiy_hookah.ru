@@ -1,5 +1,6 @@
 .section_book {
     padding-top: 130px;
+    padding-bottom: 20px;
 }
 
 .book__wrapper {
@@ -13,12 +14,14 @@
     font-family: var(--font-nasalization);
     font-size: 54px;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .book__title-content__text {
     /* margin-left: 25px; */
     font-size: 25px;
     line-height: 33px;
+    color: #fff;
 }
 
 .book__title-content__text:first-child {
