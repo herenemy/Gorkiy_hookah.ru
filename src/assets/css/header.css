@@ -1,0 +1,22 @@
+.header {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+}
+
+.nav__items {
+    display: flex;
+    gap: 49px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item-logo {
+	font-family: 'Striker', sans-serif;
+}
+
+.nav__link {
+    color: #fff;
+}
+
