@@ -48,6 +48,7 @@ b{
 }
 
 .btn_adres{
+    display: block;
     margin-bottom: 20px;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
