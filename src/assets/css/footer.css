@@ -53,6 +53,7 @@ b{
 }
 
 .btn_adres{
+    display: block;
     margin-bottom: 20px;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
@@ -82,7 +83,11 @@ b{
 
 .watch_time{
     width: 200px;
+
     font-size: 17px;
+
+    font-size: 18px;
+
     line-height: 20px;
     letter-spacing: 2px;
 }
