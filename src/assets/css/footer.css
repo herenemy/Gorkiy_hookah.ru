@@ -1,3 +1,8 @@
+.footer{
+    background-color:#171717;
+}
+    
+
 
 .footer_contact{
     position: relative;
@@ -32,7 +37,7 @@ b{
 }
 
 .link_email{
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     
 }
 .email{
@@ -76,9 +81,22 @@ b{
     line-height: 20px;
 }
 
-.watch{
+.watch_time{
     width: 200px;
+
+    font-size: 17px;
+
     font-size: 18px;
+
     line-height: 20px;
     letter-spacing: 2px;
+}
+
+.time{
+    left: 0;
+    margin-bottom: 10px;
+}
+
+.time:nth-last-child(1){
+    margin-bottom: 0;
 }
