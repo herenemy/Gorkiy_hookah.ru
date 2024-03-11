@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="src/assets/css/book.css">
     <link rel="stylesheet" href="src/assets/css/menu.css">
     <link rel="stylesheet" href="src/assets/css/slider.css">
+    <link rel="stylesheet" href="src/assets/css/album.css">
     <link rel="stylesheet" href="src/assets/css/footer.css">
 </head>
 
@@ -38,7 +39,7 @@
                         <li class="nav__item"><a href="/" class="nav__link">о нас</a></li>
                         <li class="nav__item"><a href="/" class="nav__link">меню</a></li>
                         <li class="nav__item"><a href="/" class="nav__link">акции</a></li>
-                        <li class="nav__item nav__item-logo">GORKIY HOOKAH | BAR</li>
+                        <li class="nav__item nav__item-logo">GORKIY RESTAURANT | BAR</li>
                         <li class="nav__item"><a href="/" class="nav__link">забронировать столик</a></li>
                         <li class="nav__item"><a href="/" class="nav__link">наши контакты</a></li>
                     </ul>
@@ -52,15 +53,14 @@
     
     <main>
         <section class="section section_intro">
+            <div class="intro__section-bg">
             <div class="container">
                 <div class="intro__inner">
 
-                    <div class="order-btn__container">
-                        <a class="btn btn__order_intro">забронировать стол</a>
-                    </div>
+
 
                     <div class="label__container">
-                        <div class="label__row">
+                        <!-- <div class="label__row"> -->
                             <div class="label__col">
                                 <img class="label-icon" src="src/assets/icons/intro/icon-check-50.png" alt="">
                                 <p class="label__text">Только качественный акцизный табак</p>
@@ -69,9 +69,9 @@
                                 <img class="label-icon" src="src/assets/icons/intro/icon-sofa-50.png" alt="">
                                 <p class="label__text">Уютная атмосфера и качественное обслуживание</p>
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <!-- /.label__row -->
-                        <div class="label__row_bottom">
+                        <!-- <div class="label__row_bottom"> -->
                             <div class="label__col">
                                 <img class="label-icon" src="src/assets/icons/intro/icon-service-bell-50.png" alt="">
                                 <p class="label__text">Авторские коктейли и вкусная кухня</p>
@@ -80,22 +80,27 @@
                                 <img class="label-icon" src="src/assets/icons/intro/icon-gamepad-50.png" alt="">
                                 <p class="label__text">Игровые приставки и настольные игры</p>
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <!-- /.label__row_bottom -->
                     </div>
                     <!-- /.label__container -->
+
+                    <div class="order-btn__container">
+                        <a class="btn btn__order_intro">забронировать стол</a>
+                    </div>
 
                 </div>
                 <!-- /.intro__inner -->
             </div>
             <!-- /.container -->
+            </div>
         </section>
 
         <section class="section section_menu">
             <div class="container">
                 <div class="menu__inner">
                     <div class="menu__header">
-                        <h3 class="menu__title">Меню</h3>
+                        <h3 class="section__title">Меню</h3>
     
                         <div class="menu-categories">
                             <div class="category__item">
@@ -207,7 +212,7 @@
                     <div class="book__wrapper">
 
                         <div class="book__block_left">
-                            <h2 class="book__title">
+                            <h2 class="section__title">
                                 забронировать столик
                             </h2>
                             <div class="book__title-content">
@@ -248,12 +253,33 @@
             </div>
         </section>
 
+        <section class="section section_album">
+            <h2 class="section__title section__title_album">Атмосфера нашего бара</h2>
+            <div class="album__inner">
+
+                <div class="grid__wrapper">
+                    <div id="grid-1" class="album__grid-img"></div>
+                    <div id="grid-2" class="album__grid-img"></div>
+                    <div id="grid-3" class="album__grid-img"></div>
+                    <div id="grid-4" class="album__grid-img"></div>
+                    <div id="grid-5" class="album__grid-img"></div>
+                    <div id="grid-6" class="album__grid-img"></div>
+                    <div id="grid-7" class="album__grid-img"></div>
+                    <div id="grid-8" class="album__grid-img"></div>
+                    <div id="grid-9" class="album__grid-img"></div>
+                    <div id="grid-10" class="album__grid-img"></div>
+                </div>
+                
+
+            </div>
+        </section>
+
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer_contact">
-                <h3 class="footer__title">Контакты</h3>
+                <h3 class="section__title">Контакты</h3>
                 <div class="footer_liner"></div>
                 <div class="footer_info">
                 <div class="footer_adres">

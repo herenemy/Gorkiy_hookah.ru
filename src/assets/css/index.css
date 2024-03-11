@@ -18,15 +18,21 @@
     src: url(../fonts/charlie-brown-m54.ttf);
 }
 
+@font-face {
+    font-family: 'Prospect';
+    src: url(../fonts/Prospect-L3q5y.ttf);
+}
+
 :root {
     --font-nasalization:'Nasalization', sans-serif;
     --font-neuropol: 'Neuropol X Free', sans-serif;
     --font-charlie-brown: 'Charlie Brown M54', sans-serif;
     --font-striker: 'Striker', sans-serif;
+    --font-prospect: 'Prospect', sans-serif;
 }
 
 body {
-    background-color: #171717;
+    background-color: #000;
     color: #fff;
 }
 
@@ -41,6 +47,12 @@ body {
     padding: 0 15px;
 }
 
+.section__title {
+    font-family: var(--font-nasalization);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
 /* Scroll-bar */
 ::-webkit-scrollbar {
     width: 5px;
@@ -48,7 +60,6 @@ body {
   
   ::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 5px;
   }
   
   ::-webkit-scrollbar-thumb:hover {

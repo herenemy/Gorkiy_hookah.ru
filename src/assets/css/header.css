@@ -7,9 +7,10 @@
 
 .nav__items {
     display: flex;
-    gap: 49px;
+    gap: 35px;
     justify-content: center;
     align-items: center;
+    font-size: 19px;
 }
 
 .nav__item {

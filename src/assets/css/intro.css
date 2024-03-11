@@ -1,11 +1,15 @@
 .section_intro {
-    background: url(../img/hookah-3d.png) no-repeat 52% / cover;
-    width: 100%;
-    height: 1200px;
+    height: 1000px;
 }
 
-.intro__inner {
-    /* padding: 55% 0; */
+.intro__section-bg {
+    background: url(../img/background/logo-bg.png) no-repeat center / contain;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro__inner { 
+    padding-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,15 +17,13 @@
 }
 
 .order-btn__container {
-    margin-top: 700px;
-    margin-bottom: 200px;
+    margin-top: 100px;
     cursor: pointer;
 }
 
 .btn {
     border-radius: 10px;
     background-color: #171717;
-    /* border: 1px solid #fff; */
     color: #fff;
     text-align: center;
     transition: all .2s ease;
@@ -34,13 +36,18 @@
     padding: 25px 100px;
     font-weight: 700;
     text-transform: uppercase;
-    /* border: 1px solid #000; */
 }
 
 .btn__order_intro:hover {
     border: 1px #000 solid;
     background-color: #fff;
     color: #000;
+}
+
+.label__container {
+    margin-top: 644px;
+    display: flex;
+    gap: 30px;
 }
 
 .label__row {
@@ -70,6 +77,7 @@
 
     border-radius: 10px;
     backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, .1);
     border: 1px solid #fff;
 }
 
