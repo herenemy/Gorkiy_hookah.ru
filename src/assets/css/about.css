@@ -1,10 +1,10 @@
-
 .about_wrapper{
     padding-top: 150px;
 
 }
 
 .wrapper{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -23,17 +23,22 @@
     height: 600px;
 }
 
-.about_liner{
+.about_play{
     position: absolute;
-    left: 700px;
-    top: 1700px;
-    transform: rotate(90deg);
-    width: 200px;
-    border: 2px solid gray;
+    left: 15%;
+    top: 40%;
+    border-radius: 10px;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    backdrop-filter: blur(12px);
 }
 
 .about__subtitle{
-    margin:60px 0 40px 170px;
+    margin:60px 0 30px;
     font-family: var(--font-nasalization);
     font-size: 54px;
     text-transform: uppercase;
