@@ -21,29 +21,6 @@
     cursor: pointer;
 }
 
-.btn {
-    border-radius: 10px;
-    background-color: #171717;
-    color: #fff;
-    text-align: center;
-    transition: all .2s ease;
-    outline: none;
-    cursor: pointer;
-}
-
-.btn__order_intro {
-    font-family: var(--font-neuropol);
-    padding: 25px 100px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.btn__order_intro:hover {
-    border: 1px #000 solid;
-    background-color: #fff;
-    color: #000;
-}
-
 .label__container {
     margin-top: 644px;
     display: flex;

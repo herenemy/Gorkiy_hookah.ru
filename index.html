@@ -6,16 +6,24 @@
     <title>Gorkiy</title>
 
     <!-- fonts -->
+    <!-- Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.cdnfonts.com/css/charlie-brown-m54" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nasalization-2" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/neuropol-x-free" rel="stylesheet">
+    <!-- Noto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Cormorant -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/assets/css/reset.css">
+    <link rel="stylesheet" href="src/assets/css/btn.css">
     <link rel="stylesheet" href="src/assets/css/index.css">
     <link rel="stylesheet" href="src/assets/css/header.css">
     <link rel="stylesheet" href="src/assets/css/intro.css">
@@ -40,7 +48,7 @@
                         <li class="nav__item"><a href="/" class="nav__link">о нас</a></li>
                         <li class="nav__item"><a href="/" class="nav__link">меню</a></li>
                         <li class="nav__item"><a href="/" class="nav__link">акции</a></li>
-                        <li class="nav__item nav__item-logo">GORKIY RESTAURANT | BAR</li>
+                        <h3 class="nav__item nav__item-logo">GORKIY RESTAURANT | BAR</h3>
                         <li class="nav__item"><a href="/" class="nav__link">забронировать столик</a></li>
                         <li class="nav__item"><a href="/" class="nav__link">наши контакты</a></li>
                     </ul>
@@ -101,7 +109,7 @@
     
                         <div class="menu-categories">
                             <div class="category__item">
-                                <button class="btn btn_menu btn_active">Кухня</button>
+                                <button class="btn btn_menu">Кухня</button>
                             </div>
                             <div class="category__item">
                                 <button class="btn btn_menu">Безалкогольные напитки</button>
@@ -110,7 +118,7 @@
                                 <button class="btn btn_menu">Алкогольные напитки</button>
                             </div>
                             <div class="category__item">
-                                <button class="btn btn_menu">Коктейли</button>
+                                <button class="btn btn_menu btn_active">Коктейли</button>
                             </div>
                          </div>
     
@@ -149,52 +157,215 @@
                     </div>
                 </div> -->
 
-                <div id="kitchenMenu">
+                <div id="kitchenMenu" class="menu">
                     <div class="menu__row">
                         <ul class="menu__col">
                             <li class="menu-info__title">Нормально поесть</li>
-                            <li class="menu__item">Жареный рис с цыпленком<span>550гр</span></li>
-                            <li class="menu__item">Паста карбонара<span>250гр</span></li>
-                            <li class="menu__item">Паста с лососем и песто<span>500гр</span></li>
-                            <li class="menu__item">Мак энд чиз с пармезаном<span>300гр</span></li>
-                            <li class="menu__item">Стейк из форели с бэби картофелем и стручковой фасолью<span>320гр</span></li>
-                            <li class="menu__item">Медальон из свинины с картофельным пюре и сливочно-грибным соусом<span>200гр</span></li>
-                            <li class="menu__item">Боул с лососем и авокадо<span>510гр</span></li>
+                            <li class="menu__item">Жареный рис с цыпленком<span class="menu-gr">550гр</span></li>
+                            <li class="menu__item">Паста карбонара<span class="menu-gr">250гр</span></li>
+                            <li class="menu__item">Паста с лососем и песто<span class="menu-gr">500гр</span></li>
+                            <li class="menu__item">Мак энд чиз с пармезаном<span class="menu-gr">300гр</span></li>
+                            <li class="menu__item">Стейк из форели с бэби картофелем и стручковой фасолью<span class="menu-gr">320гр</span></li>
+                            <li class="menu__item">Медальон из свинины с картофельным пюре и сливочно-грибным соусом<span class="menu-gr">200гр</span></li>
+                            <li class="menu__item">Боул с лососем и авокадо<span class="menu-gr">510гр</span></li>
                         </ul>
                         <ul class="menu__col">
                             <li class="menu-info__title">Модные салаты</li>
-                            <li class="menu__item">Салат с ростбифом<span>200 гр</span></li>
-                            <li class="menu__item">Салат с лососем<span>210гр</span></li>
-                            <li class="menu__item">Цезарь с курицей<span>175гр</span></li>
-                            <li class="menu__item">Цезарь с креветками<span>175гр</span></li>
+                            <li class="menu__item">Салат с ростбифом<span class="menu-gr">200 гр</span></li>
+                            <li class="menu__item">Салат с лососем<span class="menu-gr">210гр</span></li>
+                            <li class="menu__item">Цезарь с курицей<span class="menu-gr">175гр</span></li>
+                            <li class="menu__item">Цезарь с креветками<span class="menu-gr">175гр</span></li>
                         </ul>
                         <ul class="menu__col">
                             <li class="menu-info__title">Нормально поесть, но руками</li>
-                            <li class="menu__item">Брускетта с ростбифом<span>180гр</span></li>
-                            <li class="menu__item">Брускетта с лососем<span>180гр</span></li>
-                            <li class="menu__item">Хот - дог BBQ<span>300гр</span></li>
-                            <li class="menu__item">Хот - дог классический<span>500гр</span></li>
+                            <li class="menu__item">Брускетта с ростбифом<span class="menu-gr">180гр</span></li>
+                            <li class="menu__item">Брускетта с лососем<span class="menu-gr">180гр</span></li>
+                            <li class="menu__item">Хот - дог BBQ<span class="menu-gr">300гр</span></li>
+                            <li class="menu__item">Хот - дог классический<span class="menu-gr">500гр</span></li>
                         </ul>
                     </div>
 
                     <div class="menu__row">
                         <ul class="menu__col">
                             <li class="menu-info__title">Закусить</li>
-                            <li class="menu__item">Сырные палочки с брусничным соусом<span>180гр</span></li>
-                            <li class="menu__item">Фри с топингами<span>180гр</span></li>
-                            <li class="menu__item">Гренки чесночные<span>200гр</span></li>
-                            <li class="menu__item">Креветки в кляре<span>160гр</span></li>
+                            <li class="menu__item">Сырные палочки с брусничным соусом<span class="menu-gr">180гр</span></li>
+                            <li class="menu__item">Фри с топингами<span class="menu-gr">180гр</span></li>
+                            <li class="menu__item">Гренки чесночные<span class="menu-gr">200гр</span></li>
+                            <li class="menu__item">Креветки в кляре<span class="menu-gr">160гр</span></li>
                         </ul>
                         <ul class="menu__col">
                             <li class="menu-info__title">Закусить</li>
-                            <li class="menu__item">Том Ям<span>580мл</span></li>
-                            <li class="menu__item">Рамен с говядиной<span>580мл</span></li>
+                            <li class="menu__item">Том Ям<span class="menu-gr">580мл</span></li>
+                            <li class="menu__item">Рамен с говядиной<span class="menu-gr">580мл</span></li>
                         </ul>
                         <ul class="menu__col">
                             <li class="menu-info__title">Десерты</li>
-                            <li class="menu__item">Шоколадный фонтан<span>130гр</span></li>
-                            <li class="menu__item">Чизкейе Сан - Себастьян<span>115гр</span></li>
-                            <li class="menu__item">Медовик<span>130гр</span></li>
+                            <li class="menu__item">Шоколадный фонтан<span class="menu-gr">130гр</span></li>
+                            <li class="menu__item">Чизкейе Сан - Себастьян<span class="menu-gr">115гр</span></li>
+                            <li class="menu__item">Медовик<span class="menu-gr">130гр</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="nonAlchoMenu" class="menu">
+                    <div class="menu__row">
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Чаи</li>
+                            <li class="menu__item">Ассам<span class="menu-gr">900мл</span></li>
+                            <li class="menu__item">Сенча<span class="menu-gr">900мл</span></li>
+                            <li class="menu__item">Молочный улун<span class="menu-gr">900мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Авторские чаи</li>
+                            <li class="menu__item">Тропический с облепихой<span class="menu-gr">900мл</span></li>
+                            <li class="menu__item">Улун - Помело - Ромашка<span class="menu-gr">900мл</span></li>
+                            <li class="menu__item">Инжир - Чабрец<span class="menu-gr">900мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Лимонады</li>
+                            <li class="menu__item">Вишня - Шисо<span class="menu-gr">250мл</span></li>
+                            <li class="menu__item">Черемуха - Личи<span class="menu-gr">250мл</span></li>
+                            <li class="menu__item">Манго - Маракуйя<span class="menu-gr">250мл</span></li>
+                            <li class="menu__item">Малина - Пан<span class="menu-gr">250мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Кофе</li>
+                            <li class="menu__item">Эспрессо<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Американо<span class="menu-gr">150мл</span></li>
+                            <li class="menu__item">Капучино<span class="menu-gr">200мл</span></li>
+                            <li class="menu__item">Раф карамельный<span class="menu-gr">220мл</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu__row">
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Софт</li>
+                            <li class="menu__item">Вода газ, не газ<span class="menu-gr">500мл</span></li>
+                            <li class="menu__item">Рич кола<span class="menu-gr">550мл</span></li>
+                            <li class="menu__item">Сок в ассортименте<span class="menu-gr">200мл</span></li>
+                            <li class="menu__item">Лапочка в ассортименте<span class="menu-gr">550мл</span></li>
+                            <li class="menu__item">Энергетие<span class="menu-gr">500мл</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="alchoMenu" class="menu">
+                    <div class="menu__row">
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Пиво в бутылке</li>
+                            <li class="menu__item">Stella Artois<span class="menu-gr">500мл</span></li>
+                            <li class="menu__item">Hoegaarden<span class="menu-gr">550мл</span></li>
+                            <li class="menu__item">Corona Extra<span class="menu-gr">550мл</span></li>
+                            <li class="menu__item">Jaws<span class="menu-gr">500мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Красное вино</li>
+                            <li class="menu__item">Пино Нуар<span class="menu-gr"></span></li>
+                            <li class="menu__item">Сира<span class="menu-gr"></span></li>
+                            <li class="menu__item">Гарнача <span class="menu-gr"></span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Белое вино</li>
+                            <li class="menu__item">Шардоне<span class="menu-gr"></span></li>
+                            <li class="menu__item">Виньо Верде<span class="menu-gr"></span></li>
+                            <li class="menu__item">Совиньон Блан<span class="menu-gr"></span></li>
+                            <li class="menu__item">Рислинг<span class="menu-gr"></span></li>
+                            <li class="menu__item">Гевюрцтраминер<span class="menu-gr"></span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Игривое Вино</li>
+                            <li class="menu__item">Эндемы Рислинг<span class="menu-gr"></span></li>
+                            <li class="menu__item">Просекко<span class="menu-gr"></span></li>
+                        </ul>
+                    </div>
+                    <div class="menu__row">
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Крепач</li>
+                            <li class="menu__item">Клубника - Паприка - Клён<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Сливочная Лимончелла<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Яблоко - Карамель<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Томатная<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Груша - Попкорн<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Сет из 5ти настоек<span class="menu-gr">250мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Водка</li>
+                            <li class="menu__item">Пять Озёр<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Белуга<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Чистые Росы<span class="menu-gr">50мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Джин</li>
+                            <li class="menu__item">Beefeate London Dry Gin<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Bombay Sapphire<span class="menu-gr">50мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Текила</li>
+                            <li class="menu__item">Espolon Blanco<span class="menu-gr">50мл</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu__row">
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Виски и Бурбон</li>
+                            <li class="menu__item">William Lawsons<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Jim Beam<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Jameson<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Chivas regal 12<span class="menu-gr">50мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Ром</li>
+                            <li class="menu__item">Havana club<span class="menu-gr">50мл</span></li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Ликёры</li>
+                            <li class="menu__item">Jagermeister<span class="menu-gr">50мл</span></li>
+                            <li class="menu__item">Beluga Hunting<span class="menu-gr">50мл</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="coctailsMenu" class="menu menu_active">
+                    <div class="menu__row">
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Модные</li>
+                            <li class="menu__item"><span class="coctail-number">#1</span><span class="menu-gr">200мл</span>
+                            <p>Ром выдержанный, кордиал черемуха - личи, белуга хантинг, содовая</p>
+                            </li>
+                            <li class="menu__item"><span class="coctail-number">#2</span><span class="menu-gr">150мл</span>
+                            <p>Джин, розовое вино, аперетиво, кордиал фуджи - сакура, белок</p>
+                            </li>
+                            <li class="menu__item"><span class="coctail-number">#3</span><span class="menu-gr">150мл</span>
+                            <p>Яблочная настойка, белуга хантинг, сок лимона, водка, белок</p>
+                            </li>
+                            <li class="menu__item"><span class="coctail-number">#4</span><span class="menu-gr">150мл</span>
+                            <p>Настойка клубника - паприка, кордиал ладан - кокос, водка, сок лимона</p>
+                            </li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu__item"><span class="coctail-number">#5</span><span class="menu-gr">300мл</span>
+                            <p>Джин, кордиал яблоко - саган, яблочный сок, сок лимона, игристое, содовая</p>
+                            </li>
+                            <li class="menu__item"><span class="coctail-number">#6</span><span class="menu-gr">150мл</span>
+                            <p>Ром выдержанный, трипл сек, кордиал вишня - шисо, кордиал ладан - кокос</p>
+                            </li>
+                            <li class="menu__item"><span class="coctail-number">#7</span><span class="menu-gr">150мл</span>
+                            <p>Виски, кордиал помело - ромашка, белуга хантинг</p>
+                            </li>
+                            <li class="menu__item"><span class="coctail-number">#8</span><span class="menu-gr">200мл</span>
+                            <p>Водка, трипл сек, кордиал апельсин ваниль, апельсиновый сок</p>
+                            </li>
+                            <li class="menu__item"><span class="coctail-number">#9</span><span class="menu-gr">250мл</span>
+                            <p>Клубничный ликёр, водка, настойка сливочное Лимончелло, трипл сек, молоко, кордиал малина - пан</p>
+                            </li>
+                        </ul>
+                        <ul class="menu__col">
+                            <li class="menu-info__title">Классические</li>
+                            <li class="menu__item">Негрони<span class="menu-gr">150мл</span></li>
+                            <li class="menu__item">Апероль - Шприц<span class="menu-gr">250мл</span></li>
+                            <li class="menu__item">Джин - Тоник<span class="menu-gr">250мл</span></li>
+                            <li class="menu__item">Виски - Кола<span class="menu-gr">250мл</span></li>
+                            <li class="menu__item">Маргарита<span class="menu-gr">150мл</span></li>
+                            <li class="menu__item">Белый Русский<span class="menu-gr">200мл</span></li>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -227,16 +398,13 @@
                         </div>
                     </div>
                 </div> -->
-
-
-
                 
                 <div class="bg-img__slider"></div>
 
                 <div class="slider__wrapper">
                     <div class="slider__title-block">
                         <h2 class="slider__title">Акции</h2>
-                        <p class="slider__title-text">Следи за акциями и дыми выгодно!</p>
+                        <p class="slider__title-text">Не упускайте выгодные акции!</p>
                     </div>
 
                     <div class="slider__items">
@@ -278,7 +446,7 @@
  
         
 
-        <section class="section section_book">
+        <!-- <section class="section section_book">
             <div class="container">
                 <div class="book__inner">
                     <div class="book__wrapper">
@@ -323,7 +491,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="section section_album">
             <h2 class="section__title section__title_album">Атмосфера нашего бара</h2>
@@ -348,14 +516,14 @@
 
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer_contact">
                 <h3 class="section__title">Контакты</h3>
                 <div class="footer_liner"></div>
                 <div class="footer_info">
                 <div class="footer_adres">
-                    <p class="adres">г. Курган, <b>Максима Горького 63</b></p>
+                    <p class="address">г. Курган, <b>Максима Горького 63</b></p>
                     <div class="footer_link">
                         <p class="link_email"><a href="mailto:pavelbezelt@yandex.com" class="email">pavelbezelt@yandex.com</a></p>
                         <p class="link_tel"><a href="tel:+79128355755" class="tel">+7 (912) 835-57-55</a></p>
@@ -378,8 +546,67 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    
+                    <h3 class="section__title section__title_footer">Контакты</h3>
+                    <div class="footer__col-info">
+                        <div class="footer__block-address">
+                            <div class="footer__block-label">
+                                <img class="footer__label" src="src/assets/icons/footer/icon-location-50.png" alt="">
+                            </div>
+                            <p class="footer__address">г. Курган, Максима Горького 63</p>
+                        </div>
+                        <div class="footer__block-mail">
+                            <div class="footer__block-label">
+                                <img class="footer__label" src="src/assets/icons/footer/icon-mail-50.png" alt="">
+                            </div>
+                            <a href="mailto:dorothysbps@mail.ru">slandarka22@gmail.com</a>
+                        </div>
+                        <div class="footer__block-phone">
+                            <div class="footer__block-label">
+                                <img class="footer__label" src="src/assets/icons/footer/icon-phone-50.png" alt="">
+                            </div>
+                            <a href="tel:+79128355755">+7(912)835-57-55</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer__col">
+
+                    <div class="footer__col-info">
+                        <h3 class="section__title section__title_footer section__title_footer-nav">Меню</h3>
+                        <ul>
+                            <li class="nav__item_footer"><a href="/" class="nav__link">главная</a></li>
+                            <li class="nav__item_footer"><a href="/" class="nav__link">о нас</a></li>
+                            <li class="nav__item_footer"><a href="/" class="nav__link">меню</a></li>
+                            <li class="nav__item_footer"><a href="/" class="nav__link">акции</a></li>
+                            <li class="nav__item_footer"><a href="/" class="nav__link">забронировать столик</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer__col">
+
+                    <h3 class="section__title section__title_footer">Контакты</h3>
+                    <div class="footer__col-info">
+                        <a href="/" class="btn btn_menu btn_footer">Посмотреть на карте</a>
+                        <div class="footer__block-hours">
+                            <p class="footer__block-hours_content">пн - пт: 09:00 - 03:00</p>
+                            <p class="footer__block-hours_content">сб - вс: 12:00 - 00:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- <script src="js/index.js"></script> -->
 </body>
 </html>

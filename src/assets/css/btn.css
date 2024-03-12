@@ -1,0 +1,51 @@
+.btn {
+    border-radius: 10px;
+    background-color: #171717;
+    color: #fff;
+    text-align: center;
+    transition: all .2s ease;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn__order_intro {
+    padding: 25px 100px;
+    font-family: var(--font-noto-display);
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn__order_intro:hover {
+    border: 1px #000 solid;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Menu Button */
+
+.btn_menu{
+    /* font-family: "Nunito", sans-serif; */
+    font-weight: 700;
+    padding: 15px 27px;
+    border-radius: 10px;
+    font-size: 14px;;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.btn_active {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn_footer:hover {
+    background-color: #fff;
+    color: #000;
+}

@@ -29,9 +29,14 @@
     --font-charlie-brown: 'Charlie Brown M54', sans-serif;
     --font-striker: 'Striker', sans-serif;
     --font-prospect: 'Prospect', sans-serif;
+    --font-nunito: "Nunito", sans-serif;;
+    --font-cormorant: "Cormorant SC", serif;
+    --font-noto-display: "Noto Serif Display", serif;;
 }
 
 body {
+    font-family: var(--font-cormorant);
+    font-weight: 400;
     background-color: #000;
     color: #fff;
 }
@@ -48,7 +53,7 @@ body {
 }
 
 .section__title {
-    font-family: var(--font-nasalization);
+    font-family: var(--font-noto-display);
     font-size: 60px;
     text-transform: uppercase;
 }

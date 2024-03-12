@@ -18,10 +18,16 @@
 }
 
 .nav__item-logo {
-	font-family: 'Striker', sans-serif;
+	font-family: var(--font-noto-display);
+    font-size: 25px;
 }
 
 .nav__link {
     color: #fff;
+    transition: all .2s ease;
+}
+
+.nav__link:hover {
+    opacity: 0.6;
 }
 
