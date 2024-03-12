@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="src/assets/css/reset.css">
     <link rel="stylesheet" href="src/assets/css/btn.css">
@@ -33,6 +37,8 @@
     <link rel="stylesheet" href="src/assets/css/slider.css">
     <link rel="stylesheet" href="src/assets/css/album.css">
     <link rel="stylesheet" href="src/assets/css/footer.css">
+
+
 </head>
 
 
@@ -98,6 +104,7 @@
                 </div>
                 <!-- /.container -->
             </div>
+            <!-- /.intro__section-bg -->
         </section>
 
 
@@ -406,39 +413,67 @@
                         <h2 class="slider__title">Акции</h2>
                         <p class="slider__title-text">Не упускайте выгодные акции!</p>
                     </div>
-
-                    <div class="slider__items">
-
-                        <div class="slider__item">
-                            <div class="slider__content">
-                                <img src="src/assets/icons/slider/icon-cake-100.png" alt="">
-                                <p class="slider__suptitle">день рождения</p>
-                                <p class="slider__subtitle">с gorkiy bar</p>
-                                <p class="slider__description">Скидка <span>20%</span> в день рождения!</p>
-                            </div>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__content">
-                                <img src="src/assets/icons/slider/icon-hookah-100.png" alt="">
-                                <p class="slider__suptitle">дымные будни</p>
-                                <p class="slider__subtitle">в gorkiy bar</p>
-                                <p class="slider__description">Все кальяны за 400₽ с 19:00 до 23:00 по будням!</p>
-                            </div>
-                        </div>
-
-                        <div class="slider__item">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
                             <div class="slider__content">
                                 <img src="src/assets/icons/slider/icon-cocktails-96.png" alt="">
-                                <p class="slider__suptitle">пятый коктейл</p>
+                                <p class="slider__suptitle">Пятый коктейл</p>
                                 <p class="slider__subtitle">в подарок</p>
                                 <p class="slider__description">При заказе 4-х котейлей, пятый подадим в подарок!</p>
                             </div>
                         </div>
-
+                        <div class="swiper-slide">
+                            <div class="slider__content">
+                                <img src="src/assets/icons/slider/icon-cake-100.png" alt="">
+                                <p class="slider__suptitle">День рождение</p>
+                                <p class="slider__subtitle">в Gorkiy</p>
+                                <p class="slider__description">Скидка <span>20%</span> в день рождение!</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__content">
+                                <img src="src/assets/icons/slider/icon-hookah-100.png" alt="">
+                                <p class="slider__suptitle">Дымные будни</p>
+                                <p class="slider__subtitle">в Gorkiy</p>
+                                <p class="slider__description">Кальян за 900 рублей все будние дни с 19:00 до 23:00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__content">
+                                <img src="src/assets/icons/slider/icon-cake-100.png" alt="">
+                                <p class="slider__suptitle">hello world</p>
+                                <p class="slider__subtitle">в подарок</p>
+                                <p class="slider__description">При заказе 4-х котейлей, пятый подадим в подарок!</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__content">
+                                <img src="src/assets/icons/slider/icon-cake-100.png" alt="">
+                                <p class="slider__suptitle">hello world</p>
+                                <p class="slider__subtitle">в подарок</p>
+                                <p class="slider__description">При заказе 4-х котейлей, пятый подадим в подарок!</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__content">
+                                <img src="src/assets/icons/slider/icon-cake-100.png" alt="">
+                                <p class="slider__suptitle">hello world</p>
+                                <p class="slider__subtitle">в подарок</p>
+                                <p class="slider__description">При заказе 4-х котейлей, пятый подадим в подарок!</p>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
                     </div>
-                </div>
-
+                <!-- /.slider__wrapper -->
             </div>
             <!-- /.container -->
         </section>
@@ -510,49 +545,15 @@
                     <div id="grid-10" class="album__grid-img"></div>
                 </div>
                 
-
             </div>
         </section>
 
     </main>
 
-    <!-- <footer class="footer">
-        <div class="container">
-            <div class="footer_contact">
-                <h3 class="section__title">Контакты</h3>
-                <div class="footer_liner"></div>
-                <div class="footer_info">
-                <div class="footer_adres">
-                    <p class="address">г. Курган, <b>Максима Горького 63</b></p>
-                    <div class="footer_link">
-                        <p class="link_email"><a href="mailto:pavelbezelt@yandex.com" class="email">pavelbezelt@yandex.com</a></p>
-                        <p class="link_tel"><a href="tel:+79128355755" class="tel">+7 (912) 835-57-55</a></p>
-                        <div class="link_icon">
-                            <div class="icon_whatsapp">
-                                <a href="tel:+79128355755"><img src="" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="adres__wrapper">
-                <a class="btn btn_adres" href="https://2gis.ru/kurgan/firm/70000001083415355?m=65.34347%2C55.4362%2F16">Посмотреть на карте</a>
-                <div class="adres_watch">
-                    <p class="watch_title">Часы работы:</p>
-                    <div class="watch_time"> 
-                        <p class="time"> <b>Вс-Чт: </b>12:00-01:00</p>
-                        <p class="time"> <b>Пт-Сб: </b>12:00-03:00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-    
     <footer class="footer">
         <div class="container">
             <div class="footer__row">
                 <div class="footer__col">
-                    
                     <h3 class="section__title section__title_footer">Контакты</h3>
                     <div class="footer__col-info">
                         <div class="footer__block-address">
@@ -561,23 +562,26 @@
                             </div>
                             <p class="footer__address">г. Курган, Максима Горького 63</p>
                         </div>
+                        <!-- /.footer__block-label -->
                         <div class="footer__block-mail">
                             <div class="footer__block-label">
                                 <img class="footer__label" src="src/assets/icons/footer/icon-mail-50.png" alt="">
                             </div>
                             <a href="mailto:dorothysbps@mail.ru">slandarka22@gmail.com</a>
                         </div>
+                        <!-- /.footer__block-mail -->
                         <div class="footer__block-phone">
                             <div class="footer__block-label">
                                 <img class="footer__label" src="src/assets/icons/footer/icon-phone-50.png" alt="">
                             </div>
                             <a href="tel:+79128355755">+7(912)835-57-55</a>
                         </div>
+                        <!-- /.footer__block-phone -->
                     </div>
+                    <!-- /.footer__col-info -->
 
                 </div>
                 <div class="footer__col">
-
                     <div class="footer__col-info">
                         <h3 class="section__title section__title_footer section__title_footer-nav">Меню</h3>
                         <ul>
@@ -588,10 +592,10 @@
                             <li class="nav__item_footer"><a href="/" class="nav__link">забронировать столик</a></li>
                         </ul>
                     </div>
-
+                    <!-- /.footer__col-info -->
                 </div>
+                <!-- /.footer__col -->
                 <div class="footer__col">
-
                     <h3 class="section__title section__title_footer">Часы работы</h3>
                     <div class="footer__col-info">
                         <a href="/" class="btn btn_menu btn_footer">Посмотреть на карте</a>
@@ -600,13 +604,15 @@
                             <p class="footer__block-hours_content">сб - вс: 12:00 - 00:00</p>
                         </div>
                     </div>
+                    <!-- /.footer__col-info -->
                 </div>
-
-                </div>
+                <!-- /.footer__col -->
             </div>
+            <!-- /.footer__row -->
         </div>
+        <!-- /.container -->
     </footer>
 
-    <!-- <script src="js/index.js"></script> -->
+    <script src="src/js/slider.js"></script>
 </body>
 </html>
