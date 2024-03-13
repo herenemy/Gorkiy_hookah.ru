@@ -1,13 +1,6 @@
 :root {
-    --font-nasalization:'Nasalization', sans-serif;
-    --font-neuropol: 'Neuropol X Free', sans-serif;
-    --font-charlie-brown: 'Charlie Brown M54', sans-serif;
-    --font-striker: 'Striker', sans-serif;
-    --font-prospect: 'Prospect', sans-serif;
     --font-nunito: "Nunito", sans-serif;;
-    --font-cormorant: "Cormorant SC", serif;
     --font-noto-display: "Noto Serif Display", serif;
-    --font-druzhok: 'DRUZHOK', sans-serif;
 }
 
 body {
@@ -22,13 +15,9 @@ body {
     background-color: #000;
 }
 
-/* .section_intro {
-    height: 1000px;
-} */
-
-/* .section_about {
-    padding-top: 130px;
-} */
+.section_menu{
+    position: relative;
+}
 
 .section_reserv {
     padding: 130px 0;
