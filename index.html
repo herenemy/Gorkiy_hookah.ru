@@ -136,18 +136,10 @@
                         <h3 class="section__title">Меню</h3>
     
                         <div class="menu-categories">
-                            <div class="category__item">
-                                <button class="btn btn_menu">Кухня</button>
-                            </div>
-                            <div class="category__item">
-                                <button class="btn btn_menu">Безалкогольные напитки</button>
-                            </div>
-                            <div class="category__item">
-                                <button class="btn btn_menu">Алкогольные напитки</button>
-                            </div>
-                            <div class="category__item">
-                                <button class="btn btn_menu btn_active">Коктейли</button>
-                            </div>
+                                <button id="btnMenuKitchen" class="btn btn_menu btn-tab btn_active" data-tab="0">Кухня</button>
+                                <button id="btnMenuNonAlcho" class="btn btn_menu btn-tab" data-tab="1">Безалкогольные напитки</button>
+                                <button id="btnMenuAlcho" class="btn btn_menu btn-tab" data-tab="2">Алкогольные напитки</button>
+                                <button id="btnMenuCoctails" class="btn btn_menu btn-tab" data-tab="3">Коктейли</button>
                          </div>
     
                     </div>
@@ -185,7 +177,7 @@
                     </div>
                 </div> -->
 
-                <div id="kitchenMenu" class="menu">
+                <div id="kitchenMenu" class="menu menu_active menu__item menu__item--0"  data-menu="0">
                     <div class="menu__row">
                         <ul class="menu__col">
                             <li class="menu-info__title">Нормально поесть</li>
@@ -235,7 +227,7 @@
                     </div>
                 </div>
 
-                <div id="nonAlchoMenu" class="menu">
+                <div id="nonAlchoMenu" class="menu menu__item menu__item--1" data-menu="1">
                     <div class="menu__row">
                         <ul class="menu__col">
                             <li class="menu-info__title">Чаи</li>
@@ -276,7 +268,7 @@
                     </div>
                 </div>
 
-                <div id="alchoMenu" class="menu">
+                <div id="alchoMenu" class="menu menu__item menu__item--2" data-menu="2">
                     <div class="menu__row">
                         <ul class="menu__col">
                             <li class="menu-info__title">Пиво в бутылке</li>
@@ -351,7 +343,7 @@
                     </div>
                 </div>
 
-                <div id="coctailsMenu" class="menu menu_active">
+                <div id="coctailsMenu" class="menu menu__item menu__item--3" data-menu="3">
                     <div class="menu__row">
                         <ul class="menu__col">
                             <li class="menu-info__title">Модные</li>
@@ -635,5 +627,6 @@
     </footer>
 
     <script src="src/js/slider.js"></script>
+    <script src="src/js/tabs.js"></script>
 </body>
 </html>
