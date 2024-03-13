@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="src/assets/css/intro.css">
     <link rel="stylesheet" href="src/assets/css/about.css">
     <link rel="stylesheet" href="src/assets/css/menu.css">
-    <link rel="stylesheet" href="src/assets/css/book.css">
+    <link rel="stylesheet" href="src/assets/css/reservation.css">
     <link rel="stylesheet" href="src/assets/css/slider.css">
     <link rel="stylesheet" href="src/assets/css/album.css">
     <link rel="stylesheet" href="src/assets/css/footer.css">
@@ -49,14 +49,14 @@
             <div class="header__inner">
 
                 <nav class="nav">
-                    <ul class=nav__items>
-                        <li class="nav__item"><a href="/" class="nav__link">главная</a></li>
-                        <li class="nav__item"><a href="/" class="nav__link">о нас</a></li>
-                        <li class="nav__item"><a href="/" class="nav__link">меню</a></li>
-                        <li class="nav__item"><a href="/" class="nav__link">акции</a></li>
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="#section--1" class="nav__link">о нас</a></li>
+                        <li class="nav__item"><a href="#section--2" class="nav__link">меню</a></li>
+                        <li class="nav__item"><a href="#section--3" class="nav__link">акции</a></li>
+                        <li class="nav__item"><a href="#section--5" class="nav__link">галерея</a></li>
                         <h3 class="nav__item nav__item-logo">GORKIY RESTAURANT | BAR</h3>
-                        <li class="nav__item"><a href="/" class="nav__link">забронировать столик</a></li>
-                        <li class="nav__item"><a href="/" class="nav__link">наши контакты</a></li>
+                        <li class="nav__item"><a href="#section--4" class="nav__link">забронировать столик</a></li>
+                        <li class="nav__item"><a href="#section--6" class="nav__link">наши контакты</a></li>
                     </ul>
                 </nav>
 
@@ -67,7 +67,7 @@
     </header>  
 
     <main>
-        <section class="section section_intro">
+        <section id="section--0" class="section section_intro">
             <div class="intro__section-bg">
             <div class="container">
                 <div class="intro__inner">
@@ -96,7 +96,7 @@
                     <!-- /.label__container -->
 
                     <div class="order-btn__container">
-                        <a class="btn btn__order_intro">забронировать стол</a>
+                        <a id="btnScrollTo" class="btn btn__order_intro">забронировать стол</a>
                     </div>
 
                     </div>
@@ -107,7 +107,7 @@
             <!-- /.intro__section-bg -->
         </section>
 
-        <!-- <section class="section section_about">
+        <section id="section--1" class="section appearance-section section_about">
             <div class="container">
                 <div class="about_wrapper">
                     <div class="wrapper_title">
@@ -120,16 +120,16 @@
                             </div>
                             <div class="wrapper_subtitle">
                                 <p class="p_subtitle">
-                                    Информация "О нас"
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptatum dolorum labore voluptates sequi animi accusantium magnam voluptas asperiores, culpa tenetur mollitia iste ex consectetur. Assumenda totam deleniti, quibusdam recusandae qui nostrum inventore porro deserunt eius quas adipisci eaque vitae omnis temporibus nisi, architecto, harum minima veniam dolores? Quasi soluta ratione ipsum voluptatem maiores, omnis dolor perferendis illo incidunt similique!
                                 </p>
                             </div>
                         </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
 
-        <section class="section section_menu">
+        <section id="section--2" class="section appearance-section section_menu">
             <div class="container">
                 <div class="menu__inner">
                     <div class="menu__header">
@@ -146,36 +146,6 @@
                 </div>
     
                 <div class="liner"></div>
-<!-- 
-                <div class="menu__row">
-                    <div class="menu__col">
-                        <h3 class="menu-info__title">Кухня</h3>
-                        <p class="menu-info__text">
-                            В барном меню вы найдёте разнообразие классических и авторских коктелей, а также другие алкогольные и безалкогольные напитки
-                        </p>
-                    </div>
-                    <div class="menu__col">
-                        <h3 class="menu-info__title">Безалкогольные напитки</h3>
-                        <p class="menu-info__text">
-                            В барном меню вы найдёте разнообразие классических и авторских коктелей, а также другие алкогольные и безалкогольные напитки
-                        </p>
-                    </div>
-                    <div class="menu__col">
-                        <h3 class="menu-info__title">Алкогольные напитки</h3>
-                        <p class="menu-info__text">
-                            В барном меню вы найдёте разнообразие классических и авторских коктелей, а также другие алкогольные и безалкогольные напитки
-                        </p>
-                    </div>
-                </div>
-
-                <div class="menu__row">
-                    <div class="menu__col">
-                        <h3 class="menu-info__title">Коктейли</h3>
-                        <p class="menu-info__text">
-                            В барном меню вы найдёте разнообразие классических и авторских коктелей, а также другие алкогольные и безалкогольные напитки
-                        </p>
-                    </div>
-                </div> -->
 
                 <div id="kitchenMenu" class="menu menu_active menu__item menu__item--0"  data-menu="0">
                     <div class="menu__row">
@@ -421,7 +391,7 @@
                 
                 <div class="bg-img__slider"></div>
 
-                <div class="slider__wrapper">
+                <div id="section--3" class="slider__wrapper">
                     <div class="slider__title-block">
                         <h2 class="slider__title">Акции</h2>
                         <p class="slider__title-text">Не упускайте выгодные акции!</p>
@@ -494,54 +464,36 @@
  
         
 
-        <!-- <section class="section section_book">
+        <section id="section--4" class="section appearance-section section_reserv">
             <div class="container">
-                <div class="book__inner">
-                    <div class="book__wrapper">
+                <div class="reserv__inner">
+                    <div class="reserv__wrapper">
 
-                        <div class="book__block_left">
-                            <h2 class="section__title">
+                        <div class="reserv__block">
+                            <h2 class="section__title section__title_reserv">
                                 забронировать столик
                             </h2>
-                            <div class="book__title-content">
-                                <p class="book__title-content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat a cupiditate neque animi nulla nihil exercitationem dolor libero cum? Aut eligendi est dolorum iste iusto, dolorem aliquam dolore commodi fugit.</p>
-                                <p class="book__title-content__text">Мы вам перезвоним, если не будет свободного столика!</p>
+                            <div class="reserv__text">
+                                <p class="reserv__title-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique maxime, voluptatem, reprehenderit quidem fuga sint commodi exercitationem doloribus iste nihil? Suscipit saepe pariatur est, voluptates iste aperiam eaque consequuntur!</p>
+                                <p class="reserv__title-content__text"></p>
                             </div>
+
+                                <div class="reserv__soicals">
+                                    <a href="https://2gis.ru/kurgan/search/%D0%B3%D0%BE%D1%80%D1%8C%D0%BA%D0%B8%D0%B9/firm/70000001083415355/65.34347%2C55.4362" target="_blank" class="reserv-social reserv-social_instagram">г. Курган, Максима Горького 63</a>
+                                </div>
+                                <div class="reserv__soicals">
+                                    <a href="gorkiy.bar" target="_blank" class="reserv-social reserv-social_instagram">Наш инстаграм</a>
+                                </div>
+                                <div class="reserv__soicals">
+                                    <a href="call:+79128355755" class="reserv-social reserv-social_instagram">Позвонить нам</a>
+                                </div>
                         </div>
-                        <div class="book__block_right">
-
-                            <form action="/submit">
-                                <div class="book__item">
-                                    <label class="book__text">Имя</label>
-                                    <input type="text" class="input__book" placeholder="Введите ваше имя">
-                                </div>
-                                <div class="book__item">
-                                    <label class="book__text">Номер телефона</label>
-                                    <input type="tel" class="input__book" placeholder="+7 777 777-77-77">
-                                </div>
-                                <div class="book__item">
-                                    <label class="book__text">Дата и время</label>
-                                    <input type="text" class="input__book" placeholder="01.01.24 19:00">
-                                </div>
-                                <div class="book__item">
-                                    <label class="book__text">Количество гостей</label>
-                                    <input type="text" class="input__book" placeholder="Введите количество гостей">
-                                </div>
-                                <div class="book__item">
-                                    <label class="book__text">Пожелания</label>
-                                    <textarea type="text" class="input__book input__book_text" placeholder="Напишите ваши пожелания"></textarea>
-                                </div>
-                                <button class="btn btn_book">забронировать</button>
-                            </form>
-
-                        </div>
-
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <section class="section section_album">
+        <section id="section--5" class="section appearance-section section_album">
             <h2 class="section__title section__title_album">Атмосфера нашего бара</h2>
             <div class="album__inner">
 
@@ -563,7 +515,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer id="section--6" class="footer appearance-section">
         <div class="container">
             <div class="footer__row">
                 <div class="footer__col">
@@ -598,11 +550,11 @@
                     <div class="footer__col-info">
                         <h3 class="section__title section__title_footer section__title_footer-nav">Меню</h3>
                         <ul>
-                            <li class="nav__item_footer"><a href="/" class="nav__link">главная</a></li>
-                            <li class="nav__item_footer"><a href="/" class="nav__link">о нас</a></li>
-                            <li class="nav__item_footer"><a href="/" class="nav__link">меню</a></li>
-                            <li class="nav__item_footer"><a href="/" class="nav__link">акции</a></li>
-                            <li class="nav__item_footer"><a href="/" class="nav__link">забронировать столик</a></li>
+                            <li class="nav__item_footer"><a href="#section--0" class="nav__link">главная</a></li>
+                            <li class="nav__item_footer"><a href="#section--1" class="nav__link">о нас</a></li>
+                            <li class="nav__item_footer"><a href="#section--2" class="nav__link">меню</a></li>
+                            <li class="nav__item_footer"><a href="#section--3" class="nav__link">акции</a></li>
+                            <li class="nav__item_footer"><a href="#section--4" class="nav__link">забронировать столик</a></li>
                         </ul>
                     </div>
                     <!-- /.footer__col-info -->
@@ -628,5 +580,6 @@
 
     <script src="src/js/slider.js"></script>
     <script src="src/js/tabs.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>

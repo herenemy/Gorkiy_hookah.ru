@@ -1,0 +1,50 @@
+.section_reserv {
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
+
+.section__title_reserv {
+    margin-bottom: 25px;
+}
+
+.reserv__wrapper {
+    display: flex;
+    gap: 100px;
+}
+
+.reserv__title {
+    margin-bottom: 60px;
+    font-family: var(--font-nasalization);
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.reserv__block {
+    text-align: center;
+}
+
+.reserv__text {
+    margin-bottom: 25px;
+}
+
+.reserv__title-content__text {
+    font-size: 25px;
+    line-height: 33px;
+    color: #fff;
+}
+
+.reserv__soicals {
+    margin-bottom: 25px;
+}
+
+.reserv-social{
+    color: #fff;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+
+
+
+

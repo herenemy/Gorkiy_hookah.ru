@@ -45,6 +45,15 @@ body {
     background-color: #000;
 }
 
+.appearance-section {
+    transition: all 1s;
+}
+
+.section_hidden {
+    opacity: 0;
+    transform: translateY(9rem); 
+}
+
 .container {
     width: 100%;
     max-width: 1190px;
