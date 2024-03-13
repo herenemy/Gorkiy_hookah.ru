@@ -48,6 +48,7 @@
 }
 
 .slider__content {
+    padding: 15px;
     height: 280px;
     display: flex;
     flex-direction: column;

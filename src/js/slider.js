@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 3,
   loop: false,
-  spaceBetween: 15,
+  spaceBetween: 10,
   keyboard: {
     enabled: true,
     onlyInViewPort: true,

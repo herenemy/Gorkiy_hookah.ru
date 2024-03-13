@@ -2,7 +2,7 @@
 
 const headerNode = document.querySelector('.header');
 const navNode = document.querySelector('.nav');
-const sectionReservationNode = document.querySelector('.section_reserv');
+const sectionReservationNode = document.getElementById('section--4');
 const sectionIntroNode = document.querySelector('.section_intro');
 const btnScrollToNode = document.getElementById('btnScrollTo');
 const navLinksContainerNode = document.querySelector('.nav__items');
@@ -24,9 +24,9 @@ navLinksContainerNode.addEventListener('click', e => {
 });
 
 // Appearance section
-
 function appearanceSection(entries, observer) {
   const entry = entries[0];
+  console.log(entry);
 
   if (!entry.isIntersecting) return;
   entry.target.classList.remove('section_hidden');
