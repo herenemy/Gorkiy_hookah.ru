@@ -55,7 +55,7 @@
 
 .book__title {
     margin-bottom: 60px;
-    font-family: var(--font-nasalization);
+    /* font-family: var(--font-nunito); */
     font-size: 54px;
     text-transform: uppercase;
 }
@@ -80,7 +80,7 @@
 }
 
 .input__book {
-    font-family: var(--font-nasalization);
+    font-family: var(--font-nunito);
     padding-left: 20px;
     display: block;
     width: 500px;
@@ -90,7 +90,7 @@
 
     background: transparent;
 
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
 }
 .input__book_text {
