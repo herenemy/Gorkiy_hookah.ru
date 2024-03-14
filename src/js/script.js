@@ -35,7 +35,7 @@ function appearanceSection(entries, observer) {
 
 const sectionObserver = new IntersectionObserver(appearanceSection, {
   root: null,
-  threshold: 0.2,
+  threshold: 0,
 });
 
 allSectionsNode.forEach(item => {
