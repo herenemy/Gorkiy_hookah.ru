@@ -9,7 +9,9 @@ const navLinksContainerNode = document.querySelector('.nav__items');
 const allSectionsNode = document.querySelectorAll('.appearance-section');
 
 btnScrollToNode.addEventListener('click', () => {
-  sectionReservationNode.scrollIntoView({ behavior: 'smooth' });
+  sectionReservationNode.scrollIntoView({
+    behavior: 'smooth',
+  });
 });
 
 navLinksContainerNode.addEventListener('click', e => {
