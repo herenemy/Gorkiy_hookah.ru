@@ -7,6 +7,12 @@ const sectionIntroNode = document.querySelector('.section_intro');
 const btnScrollToNode = document.getElementById('btnScrollTo');
 const navLinksContainerNode = document.querySelector('.nav__items');
 const allSectionsNode = document.querySelectorAll('.appearance-section');
+const btnShowAlbumNode = document.getElementById('btnAlbumShow');
+const btnHideAlbumNode = document.getElementById('btnAlbumHide');
+const albumContainerNode = document.querySelector('.grid__dropdown-inner');
+const btnShowAlbumContainerNode = document.getElementById(
+  'btnAlbumShowContainer'
+);
 
 btnScrollToNode.addEventListener('click', () => {
   sectionReservationNode.scrollIntoView({
@@ -26,24 +32,24 @@ navLinksContainerNode.addEventListener('click', e => {
 });
 
 // Appearance section
-function appearanceSection(entries, observer) {
-  const entry = entries[0];
-  console.log(entry);
+// function appearanceSection(entries, observer) {
+//   const entry = entries[0];
+//   console.log(entry);
 
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove('section_hidden');
-  observer.unobserve(entry.target);
-}
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove('section_hidden');
+//   observer.unobserve(entry.target);
+// }
 
-const sectionObserver = new IntersectionObserver(appearanceSection, {
-  root: null,
-  threshold: 0,
-});
+// const sectionObserver = new IntersectionObserver(appearanceSection, {
+//   root: null,
+//   threshold: 0,
+// });
 
-allSectionsNode.forEach(item => {
-  sectionObserver.observe(item);
-  item.classList.add('section_hidden');
-});
+// allSectionsNode.forEach(item => {
+//   sectionObserver.observe(item);
+//   item.classList.add('section_hidden');
+// });
 
 // Header observer
 const headerHeight = headerNode.getBoundingClientRect().height;
@@ -61,3 +67,15 @@ const headerObserver = new IntersectionObserver(getStickyNav, {
   rootMargin: `-${headerHeight}px`,
 });
 headerObserver.observe(sectionIntroNode);
+
+// Album section
+
+btnShowAlbumNode.addEventListener('click', () => {
+  albumContainerNode.classList.add('grid_active');
+  btnShowAlbumContainerNode.classList.add('btn_hidden');
+});
+
+btnHideAlbumNode.addEventListener('click', () => {
+  albumContainerNode.classList.remove('grid_active');
+  btnShowAlbumContainerNode.classList.remove('btn_hidden');
+});

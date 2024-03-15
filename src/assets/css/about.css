@@ -21,14 +21,7 @@
     font-size: 22px;
  }
 
-.about__col img {
-    width: 350px;
-    height: 500px;
+.about__col video {
+    height: 570px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: 1s ease;
-}
-
-.about__col img:hover {
-    transform: translate(-20px, -20px);
 }
