@@ -1,25 +1,38 @@
- .about__row {
-    display: flex;
+
+ 
+ .about__row { 
+   padding-top: 130px;
     justify-content: space-between;
     gap: 50px;
+    text-align: center;
  }
+
+.about__col{
+   display: flex;
+   justify-content: space-between;
+}
+
+.about__block-text{
+   padding-top: 80px;
+}
 
  .about__title {
     font-family: var(--font-cormorant);
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     font-size: 30px;
     text-transform: uppercase;
  }
 
  .about__block-text p {
-    margin-bottom: 20px;
+   width: 700px;
+    margin:0 40px 20px 0;
     font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
  }
 
- .about__block-text p:last-child {
-    margin-bottom: 50px;
-    font-size: 22px;
- }
+
 
 .about__col video {
     height: 570px;
