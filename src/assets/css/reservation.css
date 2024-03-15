@@ -1,4 +1,4 @@
-/* .reserv__wrapper {
+.reserv__wrapper {
     display: flex;
     gap: 100px;
 }
@@ -40,9 +40,9 @@
 
 
 
- */
 
 
+/* 
  .section_book {
     padding-top: 130px;
 }
@@ -50,18 +50,15 @@
 .book__wrapper {
     display: flex;
     gap: 100px;
-    /* justify-content: space-between; */
 }
 
 .book__title {
     margin-bottom: 60px;
-    /* font-family: var(--font-nunito); */
     font-size: 54px;
     text-transform: uppercase;
 }
 
 .book__title-content__text {
-    /* margin-left: 25px; */
     font-size: 25px;
     line-height: 33px;
 }
@@ -96,4 +93,4 @@
 .input__book_text {
     padding: 15px;
     height: 200px;
-}
+} */
