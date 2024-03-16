@@ -3,6 +3,10 @@
     margin-bottom: 50px;
 }
 
+.grid {
+	transition: all .3s ease;
+}
+
 .grid__wrapper {
 	display: grid;
 	grid-template-rows: 1fr 1fr ;

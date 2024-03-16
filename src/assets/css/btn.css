@@ -72,3 +72,18 @@
     transition: .2s ease;
 }
 
+.btn-scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    cursor: pointer;
+    outline: none;
+    backdrop-filter: blur(12px);
+    border-radius: 100px;
+    z-index: 10;
+}
+
+.btn-scroll_active {
+    display: block;
+}

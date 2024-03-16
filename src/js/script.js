@@ -7,12 +7,23 @@ const sectionIntroNode = document.querySelector('.section_intro');
 const btnScrollToNode = document.getElementById('btnScrollTo');
 const navLinksContainerNode = document.querySelector('.nav__items');
 const allSectionsNode = document.querySelectorAll('.appearance-section');
+const imgAlbumNode = document.querySelectorAll('.grid');
 const btnShowAlbumNode = document.getElementById('btnAlbumShow');
 const btnHideAlbumNode = document.getElementById('btnAlbumHide');
 const albumContainerNode = document.querySelector('.grid__dropdown-inner');
 const btnShowAlbumContainerNode = document.getElementById(
   'btnAlbumShowContainer'
 );
+const btnScrollToTop = document.querySelector('.btn-scroll-to-top');
+
+btnScrollToTop.addEventListener('click', goTotop);
+
+function goTotop() {
+  if (window.scrollY > 0) {
+    window.scrollBy(0, -50);
+    setTimeout(goTotop, 0);
+  }
+}
 
 btnScrollToNode.addEventListener('click', () => {
   sectionReservationNode.scrollIntoView({
@@ -55,10 +66,13 @@ navLinksContainerNode.addEventListener('click', e => {
 const headerHeight = headerNode.getBoundingClientRect().height;
 const getStickyNav = entries => {
   const entry = entries[0];
-  console.log(entry);
-  !entry.isIntersecting
-    ? headerNode.classList.add('nav_sticky')
-    : headerNode.classList.remove('nav_sticky');
+  if (!entry.isIntersecting) {
+    headerNode.classList.add('nav_sticky');
+    btnScrollToTop.classList.add('btn-scroll_active');
+  } else {
+    headerNode.classList.remove('nav_sticky');
+    btnScrollToTop.classList.remove('btn-scroll_active');
+  }
 };
 
 const headerObserver = new IntersectionObserver(getStickyNav, {
@@ -69,7 +83,6 @@ const headerObserver = new IntersectionObserver(getStickyNav, {
 headerObserver.observe(sectionIntroNode);
 
 // Album section
-
 btnShowAlbumNode.addEventListener('click', () => {
   albumContainerNode.classList.add('grid_active');
   btnShowAlbumContainerNode.classList.add('btn_hidden');
