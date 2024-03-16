@@ -1,6 +1,7 @@
 
  
  .about__row { 
+   display: flex;
    padding-top: 130px;
     justify-content: space-between;
     gap: 50px;
@@ -8,7 +9,6 @@
  }
 
 .about__col{
-   display: flex;
    justify-content: space-between;
 }
 
