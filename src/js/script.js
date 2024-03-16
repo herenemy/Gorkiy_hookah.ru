@@ -20,7 +20,7 @@ btnScrollToTop.addEventListener('click', goTotop);
 
 function goTotop() {
   if (window.scrollY > 0) {
-    window.scrollBy(0, -50);
+    window.scrollBy(0, -75);
     setTimeout(goTotop, 0);
   }
 }

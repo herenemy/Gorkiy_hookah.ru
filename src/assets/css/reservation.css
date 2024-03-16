@@ -1,8 +1,3 @@
-.reserv__wrapper {
-    display: flex;
-    gap: 100px;
-}
-
 .reserv__title {
     margin-bottom: 60px;
     font-family: var(--font-nasalization);
@@ -13,7 +8,6 @@
 
 .reserv__block {
     padding-top: 130px;
-    text-align: center;
     z-index: 1;
 }
 
@@ -28,13 +22,24 @@
 }
 
 .reserv__soicals {
-    margin-bottom: 25px;
+    margin: 0 0 35px 50px;
 }
 
-.reserv-social{
-    color: #fff;
+.reserv__soicals a {
+    font-size: 22px;
     text-decoration: underline;
-    font-size: 25px;
+    color: #fff;
+}
+
+.icon-reserv__container {
+    position: relative;
+}
+
+.icon-reserv__container img {
+    position: absolute;
+    top: -11px;
+    left: -50px;
+    width: 40px;
 }
 
 

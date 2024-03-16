@@ -15,6 +15,10 @@ body {
     background-color: #000;
 }
 
+.section_about {
+    padding-top: 130px;
+}
+
 .section_menu{
     position: relative;
 }

@@ -20,29 +20,29 @@
     text-align: center;
 }
 
-.footer__block-label {
+.contact__block-label {
     position: relative;
 }
 
-.footer__label {
+.contact__label {
     position: absolute;
     top: -2px;
     left: -35px;
     width: 25px;
 }
 
-.footer__block-address,
-.footer__block-mail,
-.footer__block-phone {
+.contact__block-address,
+.contact__block-mail,
+.contact__block-phone {
     margin: 0 0 15px 80px;
 }
 
-.footer__block-mail a {
+.contact__block-mail a {
     text-decoration: underline;
     color: #fff;
 }
 
-.footer__block-phone a {
+.contact__block-phone a {
     color: #fff;
     text-decoration: underline;
 }

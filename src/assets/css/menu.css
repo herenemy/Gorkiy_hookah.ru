@@ -79,8 +79,15 @@
     justify-content: space-between;
 }
 
+.dish__content_coctal{
+    padding: 0 10px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .dish__name {
-    margin-bottom: 15px;
     font-size: 14px;
 }
 
@@ -91,6 +98,13 @@
 
 .dish-small {
     font-size: 12px;
+    color: #ccc;
+}
+
+.dish-small-in{
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 10px;
     color: #ccc;
 }
 
@@ -120,3 +134,33 @@
 .coctail-number {
     font-size: 22px;
 }
+
+.dish__name-coctal{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.menu__wrapper-coctal{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.dish__item-coctal{
+    height: 365px;
+}
+
+.dish__content_coctal{
+    padding: 0 10px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coctail-number {
+    font-size: 22px;
+}
+
+

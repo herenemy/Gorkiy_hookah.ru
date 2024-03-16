@@ -1,0 +1,429 @@
+@media(max-width: 1275px) {
+    .grid__wrapper {
+        height: 600px;
+    }
+}
+
+@media(max-width: 1190px) {
+    /* btn */
+    .order-btn__container {
+        margin-top: 410px;
+    }
+
+    .btn_menu {
+        padding: 15px 21px;
+    }
+}
+
+@media(max-width: 990px) {
+    /* about */
+    .about-video {
+        display: none;
+    }
+
+    /* album */
+    .grid__wrapper {
+        height: 500px;
+    }
+
+    .grid-responsive {
+        height: 1500px;
+    }
+    
+
+    /* btn */
+    .btn_menu {
+        padding: 14px 14px;
+        font-size: 12px;
+    }
+
+    .btn_about {
+        padding: 20px 100px;
+        font-size: 15px;
+    }
+
+    /* title */
+    .section__title_footer {
+        font-size: 29px;
+    }
+}
+
+
+@media(max-width: 860px) {
+    /* header */
+    .nav {
+        display: none;
+    }
+
+    /* album */
+    .grid-responsive {
+        height: 1400px;
+    }
+
+    /* intro */
+    .btn__order_intro {
+        font-size: 20px;
+    }
+
+    /* footer */
+    .nav__item_footer {
+        font-size: 18px;
+    }
+
+    .footer__block-hours {
+        font-size: 15px;
+    }
+
+    .footer__col-info {
+        font-size: 15px;
+    }
+
+    /* title */
+    .section__title {
+        font-size: 50px;
+    }
+
+    .section__title_footer {
+        font-size: 29px;
+    }
+
+    /* btn */ 
+    .btn_menu {
+        padding: 12px 10px;
+        font-size: 10px;
+    }
+
+    .btn-scroll-to-top {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .btn_about {
+        padding: 20px 100px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 737px) {
+    /* section */ 
+    #section--5 {
+        padding-bottom: 20px;
+    }
+
+    /* menu */
+    .menu__header {
+        flex-direction: column;
+    }
+
+    /* album */
+    .grid__wrapper  {
+        height: 400px;
+    }
+
+    .grid-responsive {
+        height: 1200px;
+    }
+
+    /* footer */
+    .footer__row {
+        padding-bottom: 20px;
+    }
+
+    .section__title_footer {
+        font-size: 20px;
+    }
+
+    /* title */
+    .section__title_menu {
+        margin-bottom: 25px;
+    }
+
+    /* btn */
+    .btn-scroll-to-top {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .btn-scroll-to-top img {
+        width: 35px;
+    }
+
+    .btn_long {
+        width: 300px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 662px) {
+    /* album */
+    .grid__wrapper {
+        height: 350px;
+    }
+
+    /* footer */
+    .footer__row {
+        flex-direction: column;
+    }
+
+    .footer__col {
+        text-align: center;
+    }
+
+    .contact__label {
+        display: none;
+    }
+
+    .contact__block-address,
+    .contact__block-mail,
+    .contact__block-phone {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    /* footer */
+    .nav__item_footer {
+        margin-bottom: 10px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .footer__col-info {
+        margin-bottom: 25px;
+    }
+
+    .contact__block-address,
+    .contact__block-mail,
+    .contact__block-phone {
+        margin-bottom: 10px;
+    }
+
+    .nav__item_footer {
+        font-size: 18px;
+    }
+
+    /* title */
+    .section__title_footer {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    /* btn */
+    .order-btn__container {
+        margin-top: 280px;
+    }
+
+    .btn_absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -130%);
+        transition: .2s ease;
+    }
+}
+
+@media(max-width: 562px) {
+    /* section */
+    .section {
+        padding-bottom: 70px;
+    }
+
+    /* container */
+    .container {
+        padding: 0 5px;
+    }
+
+    /* intro */
+    .intro__section-bg {
+        height: 240px;
+    }
+
+    /* about */
+    .about__col p {
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+    
+    /* menu */
+    .menu-categories {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .menu__header {
+        width: 100%;
+    }
+
+    .dish__name {
+        font-size: 12px;
+    }
+
+    .dish__item {
+        width: 180px;
+        height: 280px;
+    }
+
+    .dish__item img {
+        height: 180px;
+    }
+
+    .dish__item-coctal {
+        height: 347px;
+    }
+
+    .dish-small-in {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    /* slider */
+    .slider__wrapper {
+        padding-top: 60px;
+    }
+
+    .slider__title-block {
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+
+    .section__title_slider {
+        text-align: center;
+    }
+
+    .slider__title-text {
+        display: none;
+    }
+
+    /* album */
+    .grid__wrapper {
+        height: 300px;
+    }
+
+    .grid-responsive {
+        height: 1000px;
+    }
+
+    /* title */
+    .about__title {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 35px;
+    }
+
+    .reserv__title-content__text {
+        font-size: 20px;
+    }
+
+    .reserv__soicals a {
+        font-size: 20px;
+    }
+    
+    /* btn */
+    .btn__order_intro {
+        padding: 18px 30px;
+        font-size: 15px;
+    }
+
+    .btn_menu {
+        padding: 0;
+        font-size: 20px;
+        line-height: 50px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .btn_about {
+        padding: 0;
+        font-size: 15px;
+        line-height: 50px;
+    }
+
+    .btn_long {
+        width: 250px;
+        font-size: 17px;
+    }
+
+    .btn_footer {
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 464px) {
+    /* intro */
+    .intro__section-bg {
+        height: 210px;
+    }
+
+    /* menu */
+    .menu__header {
+        width: 100%;
+    }
+
+    .menu-categories {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .dish__item {
+        width: 150px;
+        height: 250px;
+    }
+
+    .dish__item img {
+        height: 150px;
+    }
+
+    .dish__item-coctal {
+        height: 310px;
+    }
+
+    /* reservation */
+    .reserv__soicals {
+        margin: 0 0 25px 29px; 
+    }
+
+    .reserv__soicals a {
+        font-size: 15px;
+    }
+
+    .icon-reserv__container img {
+        top: -2px;
+        left: -29px;
+        width: 25px;
+    }
+
+    /* album */
+    .grid__wrapper {
+        height: 200px;
+    }
+
+    .grid-responsive {
+        height: 800px;
+    }
+
+    /* title */
+    .section__title {
+        font-size: 30px;
+    }
+
+    /* btn */
+    .btn_long {
+        width: 150px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .btn-scroll-to-top {
+        bottom: 25px;
+        right: 25px;
+    }
+
+    .order-btn__container {
+        margin-top: 200px;
+    }
+
+}
