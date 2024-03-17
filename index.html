@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="src/assets/css/slider.css">
     <link rel="stylesheet" href="src/assets/css/album.css">
     <link rel="stylesheet" href="src/assets/css/footer.css">
+    <link rel="stylesheet" href="src/assets/css/burger.css">
     <link rel="stylesheet" href="src/assets/css/responsive.css">
 
 
@@ -48,7 +49,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header nav_sticky">
         <div class="container">
             <div class="header__inner">
 
@@ -63,41 +64,38 @@
                     </ul>
                 </nav>
 
+                <div class="burger-container">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+
             </div>
             <!-- /.header__inner -->
         </div>
         <!-- /.container -->
-    </header>  
+    </header>
+
+    <div class="burger-nav__inner">
+        <ul>
+            <li class="nav__item_burger"><a href="#section--0" class="nav__link">главная</a></li>
+            <li class="nav__item_burger"><a href="#section--1" class="nav__link">о нас</a></li>
+            <li class="nav__item_burger"><a href="#section--2" class="nav__link">меню</a></li>
+            <li class="nav__item_burger"><a href="#section--3" class="nav__link">акции</a></li>
+            <li class="nav__item_burger"><a href="#section--4" class="nav__link">забронировать столик</a></li>
+        </ul>
+        <ul>
+            <li class="nav__item_burger"><a href="https://2gis.ru/kurgan/search/%D0%B3%D0%BE%D1%80%D1%8C%D0%BA%D0%B8%D0%B9/firm/70000001083415355/65.34347%2C55.4362" class="nav__link nav__link_contact">г. Курган, Максима Горького 63</a></li>
+            <li class="nav__item_burger"><a href="https://t.me/timurffak" class="nav__link nav__link_contact">Наш телеграм</a></li>
+            <li class="nav__item_burger"><a href="https://wa.me/+905539321774" class="nav__link nav__link_contact">Наш вацап</a></li>
+        </ul>
+    </div>
 
     <main>
         <section id="section--0" class="section section_intro">
             <div class="intro__section-bg">
             <div class="container">
                 <div class="intro__inner">
-                    <!-- <div class="label__container">
-
-                        <div class="label__col">
-                            <img class="label-icon" src="src/assets/icons/intro/icon-check-50.png" alt="">
-                            <p class="label__text">Самые качественные продукты</p>
-                        </div>
-
-                        <div class="label__col">
-                            <img class="label-icon" src="src/assets/icons/intro/icon-sofa-50.png" alt="">
-                            <p class="label__text">Уютная атмосфера и качественное обслуживание</p>
-                        </div>
-
-                        <div class="label__col">
-                            <img class="label-icon" src="src/assets/icons/intro/icon-service-bell-50.png" alt="">
-                            <p class="label__text">Авторские коктейли и вкусная кухня</p>
-                        </div>
-
-                        <div class="label__col">
-                            <img class="label-icon" src="src/assets/icons/intro/icon-gamepad-50.png" alt="">
-                            <p class="label__text">Игровые приставки и настольные игры</p>
-                        </div>
-                    </div> -->
-                    <!-- /.label__container -->
-
                     <div class="order-btn__container">
                         <a id="btnScrollTo" class="btn btn__order_intro">забронировать стол</a>
                     </div>
@@ -118,7 +116,7 @@
                                 <h4 class="about__title">КОКТЕЙЛИ•ЕДА•ЛЮДИ</h4>
                                 <p class="about__subtitle">В баре •ГОРЬКИЙ• вы найдете коктейли на любой вкус. Если вы хотите узнать, что такое настоящие барные напитки, добро пожаловать к нам!
                                   Кальяны, вкусные блюда, обширное барное меню и, конечно же, атмосфера  Все это позволяет нам заверить вас в том, что вы испытаете гастрономическое наслаждение при посещении нашего заведения.</p>
-                                  <a href="https://2gis.ru/kurgan/search/%D0%B3%D0%BE%D1%80%D1%8C%D0%BA%D0%B8%D0%B9/firm/70000001083415355/65.34347%2C55.4362" target="_blank" class="btn btn_menu btn_about">Посмотреть на карте</a>
+                                  <a href="https://2gis.ru/kurgan/search/%D0%B3%D0%BE%D1%80%D1%8C%D0%BA%D0%B8%D0%B9/firm/70000001083415355/65.34347%2C55.4362" target="_blank" class="btn btn_short btn_about">Посмотреть на карте</a>
                             </div>
                         <div class="about__col about-video">
                             <video autoplay muted loop src="src/assets/videos/food-video.MOV"></video>
@@ -134,13 +132,15 @@
                     <div class="menu__header">
                         <h3 class="section__title section__title_menu">Меню</h3>
     
-                        <div class="menu-categories">
-                                <div id="btnMenuKitchen" class="btn btn_menu btn-tab btn_active" data-tab="0">Кухня</div>
-                                <div id="btnMenuNonAlcho" class="btn btn_menu btn-tab" data-tab="1">Безалкогольные напитки</div>
-                                <div id="btnMenuAlcho" class="btn btn_menu btn-tab" data-tab="2">Алкогольные напитки</div>
-                                <div id="btnMenuCoctails" class="btn btn_menu btn-tab" data-tab="3">Коктейли</div>
-                         </div>
-    
+                        <div class="menu-container">
+                            <div class="menu-categories">
+                                <div id="btnMenuKitchen" class="btn btn_menu btn_short btn-tab btn_active" data-tab="0">Кухня</div>
+                                <div id="btnMenuNonAlcho" class="btn btn_menu btn_short btn-tab" data-tab="1">Безалкогольные напитки</div>
+                                <div id="btnMenuAlcho" class="btn btn_menu btn_short btn-tab" data-tab="2">Алкогольные напитки</div>
+                                <div id="btnMenuCoctails" class="btn btn_menu btn_short btn-tab" data-tab="3">Коктейли</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
     
@@ -395,116 +395,580 @@
 
                 <div id="nonAlchoMenu" class="menu menu__item menu__item--1" data-menu="1">
                     <div class="menu__inner">
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Чаи</li>
-                            <li class="menu__item">Ассам<span class="menu-gr">900мл</span></li>
-                            <li class="menu__item">Сенча<span class="menu-gr">900мл</span></li>
-                            <li class="menu__item">Молочный улун<span class="menu-gr">900мл</span></li>
+                        <h4 class="menu-info__title">Чаи</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Ассам</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">900мл</div>
+                                        <div class="dish-small">200₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Сенча</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">900мл</div>
+                                        <div class="dish-small">200₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Молочный улун</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">900мл</div>
+                                        <div class="dish-small">200₽</div>
+                                    </div>
+                                </div>
+                            </li> 
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Авторские чаи</li>
-                            <li class="menu__item">Тропический с облепихой<span class="menu-gr">900мл</span></li>
-                            <li class="menu__item">Улун - Помело - Ромашка<span class="menu-gr">900мл</span></li>
-                            <li class="menu__item">Инжир - Чабрец<span class="menu-gr">900мл</span></li>
+                        <h4 class="menu-info__title">Авторские чаи</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Тропический с облепихой</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">900мл</div>
+                                        <div class="dish-small">350₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Улун - Помело - Ромашка</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">900мл</div>
+                                        <div class="dish-small">350₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Инжир - Чабрец</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">900мл</div>
+                                        <div class="dish-small">350₽</div>
+                                    </div>
+                                </div>
+                            </li> 
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Лимонады</li>
-                            <li class="menu__item">Вишня - Шисо<span class="menu-gr">250мл</span></li>
-                            <li class="menu__item">Черемуха - Личи<span class="menu-gr">250мл</span></li>
-                            <li class="menu__item">Манго - Маракуйя<span class="menu-gr">250мл</span></li>
-                            <li class="menu__item">Малина - Пан<span class="menu-gr">250мл</span></li>
+                        <h4 class="menu-info__title">Лимонады</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Вишня - Шисо</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">250мл</div>
+                                        <div class="dish-small">250₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Черемуха - Личи</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">250мл</div>
+                                        <div class="dish-small">250₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Манго - Маракуйя</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">250мл</div>
+                                        <div class="dish-small">250₽</div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Малина - Пан</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">250мл</div>
+                                        <div class="dish-small">250₽</div>
+                                    </div>
+                                </div>
+                            </li> 
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Кофе</li>
-                            <li class="menu__item">Эспрессо<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Американо<span class="menu-gr">150мл</span></li>
-                            <li class="menu__item">Капучино<span class="menu-gr">200мл</span></li>
-                            <li class="menu__item">Раф карамельный<span class="menu-gr">220мл</span></li>
+                        <h4 class="menu-info__title">Кофе</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Эспрессо</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">80₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Американо</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">150мл</div>
+                                        <div class="dish-small">100₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Капучино</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">200мл</div>
+                                        <div class="dish-small">120₽</div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Раф карамельный</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">220мл</div>
+                                        <div class="dish-small">180₽</div>
+                                    </div>
+                                </div>
+                            </li> 
                         </ul>
-                    </div>
-                    <div class="menu__inner">
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Софт</li>
-                            <li class="menu__item">Вода газ, не газ<span class="menu-gr">500мл</span></li>
-                            <li class="menu__item">Рич кола<span class="menu-gr">550мл</span></li>
-                            <li class="menu__item">Сок в ассортименте<span class="menu-gr">200мл</span></li>
-                            <li class="menu__item">Лапочка в ассортименте<span class="menu-gr">550мл</span></li>
-                            <li class="menu__item">Энергетие<span class="menu-gr">500мл</span></li>
+                        <h4 class="menu-info__title">Софт</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Вода газ, не газ</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">500мл</div>
+                                        <div class="dish-small">150₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Рич кола</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">550мл</div>
+                                        <div class="dish-small">150₽</div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Сок в ассортименте</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">200мл</div>
+                                        <div class="dish-small">200₽</div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Лапочка в ассортименте</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">550мл</div>
+                                        <div class="dish-small">200₽</div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-2.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Энергетик</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">500мл</div>
+                                        <div class="dish-small">250₽</div>
+                                    </div>
+                                </div>
+                            </li> 
                         </ul>
                     </div>
                 </div>
 
                 <div id="alchoMenu" class="menu menu__item menu__item--2" data-menu="2">
                     <div class="menu__inner">
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Пиво в бутылке</li>
-                            <li class="menu__item">Stella Artois<span class="menu-gr">500мл</span></li>
-                            <li class="menu__item">Hoegaarden<span class="menu-gr">550мл</span></li>
-                            <li class="menu__item">Corona Extra<span class="menu-gr">550мл</span></li>
-                            <li class="menu__item">Jaws<span class="menu-gr">500мл</span></li>
+                        <h4 class="menu-info__title">Пиво в бутылке</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Stella Artois</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">500мл</div>
+                                        <div class="dish-small">200₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Hoegaarden</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">500мл</div>
+                                        <div class="dish-small">200₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Corona Extra</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">500мл</div>
+                                        <div class="dish-small">350₽</div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Jaws</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">500мл</div>
+                                        <div class="dish-small">400₽</div>
+                                    </div>
+                                </div>
+                            </li> 
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Красное вино</li>
-                            <li class="menu__item">Пино Нуар<span class="menu-gr"></span></li>
-                            <li class="menu__item">Сира<span class="menu-gr"></span></li>
-                            <li class="menu__item">Гарнача <span class="menu-gr"></span></li>
+                        <h4 class="menu-info__title">Красное вино</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Пино Нуар</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/1500₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Сира</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/1500₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Гарнача</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/1500₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Белое вино</li>
-                            <li class="menu__item">Шардоне<span class="menu-gr"></span></li>
-                            <li class="menu__item">Виньо Верде<span class="menu-gr"></span></li>
-                            <li class="menu__item">Совиньон Блан<span class="menu-gr"></span></li>
-                            <li class="menu__item">Рислинг<span class="menu-gr"></span></li>
-                            <li class="menu__item">Гевюрцтраминер<span class="menu-gr"></span></li>
+                        <h4 class="menu-info__title">Белое вино</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Шардоне</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/1500₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Виньо Верде</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/1500₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Совиньон Блан</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/1500₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Рислинг</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/1500₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Гевюрцтраминер</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/2200₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Игривое Вино</li>
-                            <li class="menu__item">Эндемы Рислинг<span class="menu-gr"></span></li>
-                            <li class="menu__item">Просекко<span class="menu-gr"></span></li>
+        
+                        <h4 class="menu-info__title">Игривое Вино</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Эндемы Рислинг</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">200₽/1350₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Просекко</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">125мл/750мл</div>
+                                        <div class="dish-small">250₽/1500₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="menu__inner">
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Крепач</li>
-                            <li class="menu__item">Клубника - Паприка - Клён<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Сливочная Лимончелла<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Яблоко - Карамель<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Томатная<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Груша - Попкорн<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Сет из 5ти настоек<span class="menu-gr">250мл</span></li>
+                        <h4 class="menu-info__title">Крепач</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Клубника - Паприка - Клён</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">150₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Сливочная Лимончелла</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">150₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Яблоко - Карамель</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">150₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Томатная</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">150₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Груша - Попкорн</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">150₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Сет из 5-ти настоек</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">250мл</div>
+                                        <div class="dish-small">600₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Водка</li>
-                            <li class="menu__item">Пять Озёр<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Белуга<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Чистые Росы<span class="menu-gr">50мл</span></li>
+        
+                        <h4 class="menu-info__title">Водка</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Пять Озёр</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">150₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Белуга</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">220₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Чистые Росы</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">250₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Джин</li>
-                            <li class="menu__item">Beefeate London Dry Gin<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Bombay Sapphire<span class="menu-gr">50мл</span></li>
+                        <h4 class="menu-info__title">Джин</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Beefeate London Dry Gin</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">350₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Bombay Sapphire</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">550₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Текила</li>
-                            <li class="menu__item">Espolon Blanco<span class="menu-gr">50мл</span></li>
+                        <h4 class="menu-info__title">Текила</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Espolon Blanco</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">300₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="menu__inner">
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Виски и Бурбон</li>
-                            <li class="menu__item">William Lawsons<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Jim Beam<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Jameson<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Chivas regal 12<span class="menu-gr">50мл</span></li>
+                        <h4 class="menu-info__title">Ром</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Havana club</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">350₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Ром</li>
-                            <li class="menu__item">Havana club<span class="menu-gr">50мл</span></li>
+                        <h4 class="menu-info__title">Ликёры</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Jagermeister</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">300₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Beluga Hunting</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">250₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <ul class="menu__col">
-                            <li class="menu-info__title">Ликёры</li>
-                            <li class="menu__item">Jagermeister<span class="menu-gr">50мл</span></li>
-                            <li class="menu__item">Beluga Hunting<span class="menu-gr">50мл</span></li>
+                        <h4 class="menu-info__title">Виски и Бурбон</h4>
+                        <ul class="menu__wrapper">
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">William Lawsons</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">250₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Jim Beam</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">300₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Jameson</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">350₽</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dish__item">
+                                <img src="src/assets/img/album/coctails/coctail-4.jpg" alt="">
+                                <div class="dish__content">
+                                    <div class="dish__name">Chivas regal 12</div>
+                                    <div class="dish__small-text">
+                                        <div class="dish-small">50мл</div>
+                                        <div class="dish-small">650₽</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -901,7 +1365,7 @@
                 <div class="footer__col">
                     <h3 class="section__title section__title_footer">Часы работы</h3>
                     <div class="footer__col-info">
-                        <a href="https://2gis.ru/kurgan/search/%D0%B3%D0%BE%D1%80%D1%8C%D0%BA%D0%B8%D0%B9/firm/70000001083415355/65.34347%2C55.4362" target="_blank" class="btn btn_menu btn_footer">Посмотреть на карте</a>
+                        <a href="https://2gis.ru/kurgan/search/%D0%B3%D0%BE%D1%80%D1%8C%D0%BA%D0%B8%D0%B9/firm/70000001083415355/65.34347%2C55.4362" target="_blank" class="btn btn_short btn_footer">Посмотреть на карте</a>
                         <div class="footer__block-hours">
                             <p class="footer__block-hours_content">Вс - Чт: 12:00 - 01:00</p>
                             <p class="footer__block-hours_content">Пт - Сб: 12:00 - 03:00</p>

@@ -1,6 +1,7 @@
 .burger-container {
     display: none;
     justify-content: flex-end;
+    z-index: 50;
 }
 
 .burger {
@@ -9,6 +10,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 30px;
+    z-index: 50;
 }
 
 .burger span {
@@ -48,11 +50,6 @@
 .burger.active:after {
     bottom: 50%; 
     transform: rotate(45deg) translate(0, 50%);
-}
-
-.burger-nav__inner {
-    /* display: none; */
-
 }
 
 .nav-menu-title {
@@ -97,6 +94,7 @@
 }
 
 .nav__item_burger {
+    margin-right: 15px;
     margin-bottom: 10px;
     font-size: 15px;
     text-align: end;

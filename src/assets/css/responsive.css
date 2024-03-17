@@ -235,6 +235,11 @@
         padding: 0 5px;
     }
 
+    /* burger */
+    .nav__item_burger {
+        margin-right: 0;
+    }
+
     /* intro */
     .intro__section-bg {
         height: 240px;

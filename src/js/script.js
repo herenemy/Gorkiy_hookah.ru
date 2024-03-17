@@ -82,15 +82,9 @@ navLinksContainerNode.addEventListener('click', e => {
 const headerHeight = headerNode.getBoundingClientRect().height;
 const getStickyNav = entries => {
   const entry = entries[0];
-  if (window.matchMedia(`(max-width: 860px)`)) {
-    headerNode.classList.add('nav_sticky');
-    return;
-  }
   if (!entry.isIntersecting) {
-    headerNode.classList.add('nav_sticky');
     btnScrollToTop.classList.add('btn-scroll_active');
   } else {
-    headerNode.classList.remove('nav_sticky');
     btnScrollToTop.classList.remove('btn-scroll_active');
   }
 };
