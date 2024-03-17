@@ -102,8 +102,8 @@
     }
 
     .btn-scroll-to-top {
-        bottom: 10px;
-        right: 15px;
+        bottom: 20px;
+        right: 20px;
     }
 
     .btn_about {
@@ -237,7 +237,11 @@
 
     /* burger */
     .nav__item_burger {
-        margin-right: 0;
+        margin-right: 20px;
+    }
+
+    .burger-container {
+        margin: 11px 15px 0 0;
     }
 
     /* intro */
@@ -371,9 +375,9 @@
         color: #736f6f;
     }
 
-    .btn-scroll-to-top {
+    /* .btn-scroll-to-top {
         right: 5px;
-    }
+    } */
 }
 
 @media(max-width: 464px) {
@@ -442,10 +446,10 @@
         font-size: 11px;
     }
 
-    .btn-scroll-to-top {
+    /* .btn-scroll-to-top {
         bottom: 10px;
         right: 5px;
-    }
+    } */
 
     .order-btn__container {
         margin-top: 200px;
