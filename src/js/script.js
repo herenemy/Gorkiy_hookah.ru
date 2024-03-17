@@ -15,6 +15,8 @@ const btnShowAlbumContainerNode = document.getElementById(
   'btnAlbumShowContainer'
 );
 const btnScrollToTop = document.querySelector('.btn-scroll-to-top');
+const burgerContainer = document.querySelector('.burger-nav__inner');
+const burgerMenu = document.querySelector('.burger');
 
 btnScrollToTop.addEventListener('click', goTotop);
 
@@ -63,9 +65,27 @@ navLinksContainerNode.addEventListener('click', e => {
 // });
 
 // Header observer
+
+// const mediaQuery = window.matchMedia(`(max-width: 860px)`);
+// if (mediaQuery.matches) {
+//   console.log('hello world');
+// }
+
+// function checkQuery(mediaQuery) {
+//   if (mediaQuery.matches) {
+//     headerNode.classList.add('nav_sticky');
+//   }
+// }
+
+// mediaQuery.addEventListener('change', checkQuery);
+
 const headerHeight = headerNode.getBoundingClientRect().height;
 const getStickyNav = entries => {
   const entry = entries[0];
+  if (window.matchMedia(`(max-width: 860px)`)) {
+    headerNode.classList.add('nav_sticky');
+    return;
+  }
   if (!entry.isIntersecting) {
     headerNode.classList.add('nav_sticky');
     btnScrollToTop.classList.add('btn-scroll_active');
@@ -91,4 +111,10 @@ btnShowAlbumNode.addEventListener('click', () => {
 btnHideAlbumNode.addEventListener('click', () => {
   albumContainerNode.classList.remove('grid_active');
   btnShowAlbumContainerNode.classList.remove('btn_hidden');
+});
+
+// burger menu
+burgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.toggle('active');
+  burgerContainer.classList.toggle('burger__nav_active');
 });

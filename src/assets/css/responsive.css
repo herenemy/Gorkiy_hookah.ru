@@ -51,8 +51,16 @@
 
 @media(max-width: 860px) {
     /* header */
+    .header {
+        backdrop-filter: none;
+    }
+
     .nav {
         display: none;
+    }
+
+    .burger-container {
+        display: flex;
     }
 
     /* album */
@@ -94,8 +102,8 @@
     }
 
     .btn-scroll-to-top {
-        bottom: 40px;
-        right: 40px;
+        bottom: 10px;
+        right: 15px;
     }
 
     .btn_about {
@@ -139,11 +147,6 @@
     }
 
     /* btn */
-    .btn-scroll-to-top {
-        bottom: 30px;
-        right: 30px;
-    }
-
     .btn-scroll-to-top img {
         width: 35px;
     }
@@ -244,14 +247,22 @@
     }
     
     /* menu */
-    .menu-categories {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-
     .menu__header {
         width: 100%;
+    }
+
+    .menu-container {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+      
+    .menu-categories {
+        white-space: nowrap;
+    }
+
+    .menu__inner {
+        margin-bottom: 0;
     }
 
     .dish__name {
@@ -327,17 +338,17 @@
     }
 
     .btn_menu {
-        padding: 0;
+        padding: 0 10px;
         font-size: 20px;
-        line-height: 50px;
+        line-height: 40px;
         width: 100%;
-        height: 50px;
+        height: 40px;
+        border: none;
     }
 
     .btn_about {
-        padding: 0;
+        padding: 15px;
         font-size: 15px;
-        line-height: 50px;
     }
 
     .btn_long {
@@ -348,6 +359,15 @@
     .btn_footer {
         padding: 5px;
         font-size: 15px;
+    }
+
+    .btn_active {
+        background-color: transparent;
+        color: #736f6f;
+    }
+
+    .btn-scroll-to-top {
+        right: 5px;
     }
 }
 
@@ -362,11 +382,11 @@
         width: 100%;
     }
 
-    .menu-categories {
+    /* .menu-categories {
         flex-direction: column;
         width: 100%;
         gap: 10px;
-    }
+    } */
 
     .dish__item {
         width: 150px;
@@ -418,12 +438,11 @@
     }
 
     .btn-scroll-to-top {
-        bottom: 25px;
-        right: 25px;
+        bottom: 10px;
+        right: 5px;
     }
 
     .order-btn__container {
         margin-top: 200px;
     }
-
 }
