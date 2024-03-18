@@ -33,24 +33,24 @@ navLinksContainer.addEventListener('click', e => {
 });
 
 // Appearance section
-function appearanceSection(entries, observer) {
-  const entry = entries[0];
-  console.log(entry);
+// function appearanceSection(entries, observer) {
+//   const entry = entries[0];
+//   console.log(entry);
 
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove('section_hidden');
-  observer.unobserve(entry.target);
-}
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove('section_hidden');
+//   observer.unobserve(entry.target);
+// }
 
-const sectionObserver = new IntersectionObserver(appearanceSection, {
-  root: null,
-  threshold: 0,
-});
+// const sectionObserver = new IntersectionObserver(appearanceSection, {
+//   root: null,
+//   threshold: 0,
+// });
 
-allSectionsNode.forEach(item => {
-  sectionObserver.observe(item);
-  item.classList.add('section_hidden');
-});
+// allSectionsNode.forEach(item => {
+//   sectionObserver.observe(item);
+//   item.classList.add('section_hidden');
+// });
 
 // Header observer
 
