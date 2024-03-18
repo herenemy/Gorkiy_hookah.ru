@@ -74,16 +74,12 @@
     }
 
     /* footer */
-    .nav__item_footer {
+    .footer__contact {
         font-size: 18px;
     }
 
-    .footer__block-hours {
-        font-size: 15px;
-    }
-
-    .footer__col-info {
-        font-size: 15px;
+    iframe {
+        height: 300px;
     }
 
     /* title */
@@ -133,12 +129,16 @@
     }
 
     /* footer */
-    .footer__row {
-        padding-bottom: 20px;
+    .footer {
+        padding: 70px 0;
     }
 
-    .section__title_footer {
-        font-size: 20px;
+    .footer__contact {
+        font-size: 15px;
+    }
+
+    iframe {
+        height: 200px;
     }
 
     /* title */
@@ -158,6 +158,11 @@
 }
 
 @media(max-width: 662px) {
+    /* intro */
+    .intro__section-bg {
+        height: 600px;
+    }
+
     /* album */
     .grid__wrapper {
         height: 350px;
@@ -168,8 +173,11 @@
         flex-direction: column;
     }
 
-    .footer__col {
-        text-align: center;
+    .footer__col:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
     }
 
     .contact__label {
@@ -212,7 +220,7 @@
 
     /* btn */
     .order-btn__container {
-        margin-top: 280px;
+        margin-top: 500px;
     }
 
     .btn_absolute {
@@ -245,9 +253,9 @@
     }
 
     /* intro */
-    .intro__section-bg {
+    /* .intro__section-bg {
         height: 240px;
-    }
+    } */
 
     /* about */
     .about__col p {
@@ -345,6 +353,10 @@
     }
     
     /* btn */
+    .order-btn__container {
+        margin-top: 400px;
+    }
+
     .btn__order_intro {
         padding: 18px 30px;
         font-size: 15px;
@@ -387,21 +399,10 @@
 }
 
 @media(max-width: 464px) {
-    /* intro */
-    .intro__section-bg {
-        height: 210px;
-    }
-
     /* menu */
     .menu__header {
         width: 100%;
     }
-
-    /* .menu-categories {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    } */
 
     .dish__item {
         width: 150px;
@@ -445,19 +446,37 @@
         font-size: 30px;
     }
 
+    .section__title_footer {
+        font-size: 25px;
+    }
+
     /* btn */
     .btn_long {
         width: 150px;
         height: 40px;
         font-size: 11px;
     }
-
-    /* .btn-scroll-to-top {
-        bottom: 10px;
-        right: 5px;
-    } */
-
-    .order-btn__container {
-        margin-top: 200px;
-    }
 }
+
+@media(max-width: 360px) {
+    .intro__section-bg {
+        height: 500px;
+    }
+
+    .dish__item {
+        width: 130px;
+        height: 220px;
+    }
+
+    .dish__item img {
+        height: 130px;
+    }
+
+    .dish__name {
+        font-size: 10px;
+    }
+
+    .dish__item-coctal {
+        height: 285px;
+    }
+} 

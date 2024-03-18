@@ -1,19 +1,13 @@
 'use strict';
 
-const headerNode = document.querySelector('.header');
-const navNode = document.querySelector('.nav');
-const sectionReservationNode = document.getElementById('section--4');
-const sectionIntroNode = document.querySelector('.section_intro');
-const btnScrollToNode = document.getElementById('btnScrollTo');
-const navLinksContainerNode = document.querySelector('.nav__items');
+const header = document.querySelector('.header');
+const sectionIntro = document.querySelector('.section_intro');
+const navLinksContainer = document.querySelector('.nav__items');
 const allSectionsNode = document.querySelectorAll('.appearance-section');
-const imgAlbumNode = document.querySelectorAll('.grid');
-const btnShowAlbumNode = document.getElementById('btnAlbumShow');
-const btnHideAlbumNode = document.getElementById('btnAlbumHide');
-const albumContainerNode = document.querySelector('.grid__dropdown-inner');
-const btnShowAlbumContainerNode = document.getElementById(
-  'btnAlbumShowContainer'
-);
+const btnShowAlbum = document.getElementById('btnAlbumShow');
+const btnHideAlbum = document.getElementById('btnAlbumHide');
+const albumContainer = document.querySelector('.grid__dropdown-inner');
+const btnShowAlbumContainer = document.getElementById('btnAlbumShowContainer');
 const btnScrollToTop = document.querySelector('.btn-scroll-to-top');
 const burgerContainer = document.querySelector('.burger-nav__inner');
 const burgerMenu = document.querySelector('.burger');
@@ -27,13 +21,7 @@ function goTotop() {
   }
 }
 
-btnScrollToNode.addEventListener('click', () => {
-  sectionReservationNode.scrollIntoView({
-    behavior: 'smooth',
-  });
-});
-
-navLinksContainerNode.addEventListener('click', e => {
+navLinksContainer.addEventListener('click', e => {
   e.preventDefault();
   const target = e.target;
 
@@ -73,13 +61,13 @@ allSectionsNode.forEach(item => {
 
 // function checkQuery(mediaQuery) {
 //   if (mediaQuery.matches) {
-//     headerNode.classList.add('nav_sticky');
+//     header.classList.add('nav_sticky');
 //   }
 // }
 
 // mediaQuery.addEventListener('change', checkQuery);
 
-const headerHeight = headerNode.getBoundingClientRect().height;
+const headerHeight = header.getBoundingClientRect().height;
 const getStickyNav = entries => {
   const entry = entries[0];
   if (!entry.isIntersecting) {
@@ -94,17 +82,17 @@ const headerObserver = new IntersectionObserver(getStickyNav, {
   threshold: 0.1,
   rootMargin: `-${headerHeight}px`,
 });
-headerObserver.observe(sectionIntroNode);
+headerObserver.observe(sectionIntro);
 
 // Album section
-btnShowAlbumNode.addEventListener('click', () => {
-  albumContainerNode.classList.add('grid_active');
-  btnShowAlbumContainerNode.classList.add('btn_hidden');
+btnShowAlbum.addEventListener('click', () => {
+  albumContainer.classList.add('grid_active');
+  btnShowAlbumContainer.classList.add('btn_hidden');
 });
 
-btnHideAlbumNode.addEventListener('click', () => {
-  albumContainerNode.classList.remove('grid_active');
-  btnShowAlbumContainerNode.classList.remove('btn_hidden');
+btnHideAlbum.addEventListener('click', () => {
+  albumContainer.classList.remove('grid_active');
+  btnShowAlbumContainer.classList.remove('btn_hidden');
 });
 
 // burger menu
