@@ -1,7 +1,10 @@
+*{outline:1px solid red;}
+
 @media(max-width: 1275px) {
     .grid__wrapper {
         height: 600px;
     }
+    
 }
 
 @media(max-width: 1190px) {
@@ -12,6 +15,9 @@
 
     .btn_menu {
         padding: 15px 21px;
+    }
+    .team__title{
+        font-size: 35px;
     }
 }
 
@@ -29,7 +35,20 @@
     .grid-responsive {
         height: 1500px;
     }
-    
+    /* team */
+
+    .komand__iner{
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .wrapper__komand{
+        flex-direction: column;
+    }
+
+    .komand__iner{
+        max-width: 350px;
+    }
 
     /* btn */
     .btn_menu {
@@ -73,6 +92,12 @@
         font-size: 20px;
     }
 
+    /* team */
+    .komand{
+        width: 250px;
+        height: 300px;
+    }
+
     /* footer */
     .footer__contact {
         font-size: 18px;
@@ -91,6 +116,9 @@
         font-size: 29px;
     }
 
+    .team__title{
+        font-size: 35px;
+    }
     /* btn */ 
     .btn_menu {
         padding: 12px 10px;
@@ -127,9 +155,19 @@
     .grid-responsive {
         height: 1200px;
     }
+    /* team */
+    .team{
+        flex-direction: column;
+    }
 
+    
+    .komand{
+        width: 250px;
+        height: 300px;
+    }
     /* footer */
     .footer {
+        text-align: center;
         padding: 70px 0;
     }
 
@@ -144,6 +182,10 @@
     /* title */
     .section__title_menu {
         margin-bottom: 25px;
+    }
+
+    .team__title{
+        font-size: 35px;
     }
 
     /* btn */
@@ -166,6 +208,11 @@
     /* album */
     .grid__wrapper {
         height: 350px;
+    }
+
+    .komand{
+        width: 350px;
+        height: 400px;
     }
 
     /* footer */
@@ -325,6 +372,23 @@
     .slider__title-text {
         display: none;
     }
+    .team__title{
+        font-size: 30px;
+    }
+
+    .menu-info__title {
+        text-align: center;
+    }
+
+    .menu__wrapper{
+        justify-content: center;
+    }
+
+    /* Team*/
+    .komand{
+        width: 250px;
+        height: 350px;
+    }
 
     /* album */
     .grid__wrapper {
@@ -403,6 +467,13 @@
     .menu__header {
         width: 100%;
     }
+    .menu-info__title {
+        text-align: center;
+    }
+
+    .menu__wrapper{
+        justify-content: center;
+    }
 
     .dish__item {
         width: 150px;
@@ -411,6 +482,14 @@
 
     .dish__item img {
         height: 150px;
+    }
+
+    .dish__name-vino{
+        flex-direction: column;
+    } 
+
+    .dish-small{
+        padding-top: 5px;
     }
 
     .dish__item-coctal {
@@ -450,6 +529,10 @@
         font-size: 25px;
     }
 
+    .team__title{
+        font-size: 35px;
+    }
+
     /* btn */
     .btn_long {
         width: 150px;
@@ -462,6 +545,7 @@
     .intro__section-bg {
         height: 500px;
     }
+
 
     .dish__item {
         width: 130px;
@@ -479,4 +563,16 @@
     .dish__item-coctal {
         height: 285px;
     }
+    .about__col-text {
+        padding-bottom: 80px;
+    }
+    .dish__name-vino{
+        flex-direction: column;
+    } 
+
+    .menu__header{
+        padding-top: 80px;
+    }
+
+
 } 

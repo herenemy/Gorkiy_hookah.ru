@@ -21,6 +21,11 @@
     transition: all .2s ease;
 }
 
+.btn_short:hover{
+    color: #000;
+    background-color: #fff;
+}
+
 .btn__order_intro {
     padding: 25px 100px;
     font-family: var(--font-noto-display);
