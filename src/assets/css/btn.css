@@ -87,3 +87,8 @@
 .btn-scroll_active {
     display: block;
 }
+
+.btn_about:hover{
+    color: #000;
+    background-color: #fff;
+}

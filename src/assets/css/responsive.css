@@ -46,6 +46,10 @@
     .section__title_footer {
         font-size: 29px;
     }
+    .menu-info__title{
+        text-align: center;
+        padding-top: 20px;
+    } 
 }
 
 
@@ -90,6 +94,15 @@
     .section__title_footer {
         font-size: 29px;
     }
+    .menu-info__title{
+        text-align: center;
+        padding-top: 20px;
+    } 
+
+    .section__title_slider{
+        text-align: center;
+    }
+
 
     /* btn */ 
     .btn_menu {
@@ -145,7 +158,13 @@
     .section__title_menu {
         margin-bottom: 25px;
     }
+    .menu-info__title{
+        text-align: center;
+    } 
 
+    .menu__wrapper{
+        justify-content: center;
+    }
     /* btn */
     .btn-scroll-to-top img {
         width: 35px;
@@ -154,6 +173,9 @@
     .btn_long {
         width: 300px;
         font-size: 20px;
+    }
+    .nav__item_burger{
+        margin-bottom: 35px;
     }
 }
 
@@ -218,6 +240,10 @@
         font-size: 25px;
     }
 
+    .menu-info__title{
+        text-align: center;
+    } 
+
     /* btn */
     .order-btn__container {
         margin-top: 500px;
@@ -229,6 +255,10 @@
         left: 50%;
         transform: translate(-50%, -130%);
         transition: .2s ease;
+    }
+
+    .nav__item_burger{
+        margin-bottom: 35px;
     }
 }
 
@@ -274,6 +304,10 @@
         overflow-y: hidden;
     }
       
+    .menu-info__title{
+        text-align: center;
+    } 
+
     .menu-categories {
         white-space: nowrap;
     }
@@ -393,6 +427,10 @@
         color: #fff;
     }
 
+    .nav__item_burger{
+        margin-bottom: 35px;
+    }
+
     /* .btn-scroll-to-top {
         right: 5px;
     } */
@@ -415,6 +453,10 @@
 
     .dish__item-coctal {
         height: 310px;
+    }
+
+    .menu__wrapper{
+        justify-content: center;
     }
 
     /* reservation */
@@ -445,11 +487,23 @@
     .section__title {
         font-size: 30px;
     }
+    .menu-info__title{
+        text-align: center;
+    } 
 
     .section__title_footer {
         font-size: 25px;
     }
 
+    .dish__small-text-vino{
+        flex-direction: column;
+    }
+    .nav__item_burger{
+        margin-bottom: 35px;
+    }
+    .dish-small-vino{
+        padding-bottom: 2px;
+    }
     /* btn */
     .btn_long {
         width: 150px;
@@ -479,4 +533,39 @@
     .dish__item-coctal {
         height: 285px;
     }
+    
+    .menu-info__title{
+        text-align: center;
+    } 
+
+    .menu__wrapper{
+        justify-content: center;
+    }
+
+    .slider__content{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .menu__header{
+        margin-top: 190px;
+    }
+
+    .section__title_slider{
+        margin-top: 50px;
+    }
+
+    .nav__item_burger{
+        margin-bottom: 35px;
+    }
+
+    .dish__small-text-vino{
+        flex-direction: column;
+    }
+    .dish-small-vino{
+        padding-bottom: 2px;
+    }
+    /* .footer__col{
+        text-align: center;
+    } */
 } 
