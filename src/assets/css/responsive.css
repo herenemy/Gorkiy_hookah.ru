@@ -47,9 +47,12 @@
         font-size: 29px;
     }
     .menu-info__title{
-        text-align: center;
         padding-top: 20px;
     } 
+
+    .footer__contact{
+        margin-bottom: 25px;
+    }
 }
 
 
@@ -95,7 +98,6 @@
         font-size: 29px;
     }
     .menu-info__title{
-        text-align: center;
         padding-top: 20px;
     } 
 
@@ -103,6 +105,9 @@
         text-align: center;
     }
 
+    .footer__contact{
+        margin-bottom: 25px;
+    }
 
     /* btn */ 
     .btn_menu {
@@ -158,13 +163,6 @@
     .section__title_menu {
         margin-bottom: 25px;
     }
-    .menu-info__title{
-        text-align: center;
-    } 
-
-    .menu__wrapper{
-        justify-content: center;
-    }
     /* btn */
     .btn-scroll-to-top img {
         width: 35px;
@@ -176,6 +174,9 @@
     }
     .nav__item_burger{
         margin-bottom: 35px;
+    }
+    .footer__contact{
+        margin-bottom: 25px;
     }
 }
 
@@ -240,9 +241,6 @@
         font-size: 25px;
     }
 
-    .menu-info__title{
-        text-align: center;
-    } 
 
     /* btn */
     .order-btn__container {
@@ -259,6 +257,9 @@
 
     .nav__item_burger{
         margin-bottom: 35px;
+    }
+    .footer__contact{
+        margin-bottom: 25px;
     }
 }
 
@@ -303,10 +304,7 @@
         overflow-x: auto;
         overflow-y: hidden;
     }
-      
-    .menu-info__title{
-        text-align: center;
-    } 
+       
 
     .menu-categories {
         white-space: nowrap;
@@ -430,6 +428,9 @@
     .nav__item_burger{
         margin-bottom: 35px;
     }
+    .about__col p{
+        font-size: 20px;
+    }
 
     /* .btn-scroll-to-top {
         right: 5px;
@@ -455,9 +456,6 @@
         height: 310px;
     }
 
-    .menu__wrapper{
-        justify-content: center;
-    }
 
     /* reservation */
     .reserv__soicals {
@@ -487,9 +485,6 @@
     .section__title {
         font-size: 30px;
     }
-    .menu-info__title{
-        text-align: center;
-    } 
 
     .section__title_footer {
         font-size: 25px;
@@ -503,6 +498,14 @@
     }
     .dish-small-vino{
         padding-bottom: 2px;
+    }
+
+    .footer__contact{
+        margin-bottom: 25px;
+    }
+
+    .about__col p{
+        font-size: 20px;
     }
     /* btn */
     .btn_long {
@@ -534,13 +537,6 @@
         height: 285px;
     }
     
-    .menu-info__title{
-        text-align: center;
-    } 
-
-    .menu__wrapper{
-        justify-content: center;
-    }
 
     .slider__content{
         width: 250px;
@@ -564,6 +560,14 @@
     }
     .dish-small-vino{
         padding-bottom: 2px;
+    }
+
+    .footer__contact{
+        margin-bottom: 25px;
+    }
+
+    .about__col p{
+        font-size: 18px;
     }
     /* .footer__col{
         text-align: center;
