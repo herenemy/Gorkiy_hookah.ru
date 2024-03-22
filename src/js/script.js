@@ -8,9 +8,13 @@ const btnShowAlbum = document.getElementById('btnAlbumShow');
 const btnHideAlbum = document.getElementById('btnAlbumHide');
 const albumContainer = document.querySelector('.grid__dropdown-inner');
 const btnShowAlbumContainer = document.getElementById('btnAlbumShowContainer');
+const btnOrderIntro = document.querySelector('.btn__order_intro');
 const btnScrollToTop = document.querySelector('.btn-scroll-to-top');
 const burgerContainer = document.querySelector('.burger-nav__inner');
 const burgerMenu = document.querySelector('.burger');
+const popup = document.querySelector('.popup');
+const btnPopupClose = document.querySelector('.popup__close');
+const overlay = document.querySelector('.overlay');
 
 btnScrollToTop.addEventListener('click', goTotop);
 
@@ -33,24 +37,24 @@ navLinksContainer.addEventListener('click', e => {
 });
 
 // Appearance section
-// function appearanceSection(entries, observer) {
-//   const entry = entries[0];
-//   console.log(entry);
+function appearanceSection(entries, observer) {
+  const entry = entries[0];
+  console.log(entry);
 
-//   if (!entry.isIntersecting) return;
-//   entry.target.classList.remove('section_hidden');
-//   observer.unobserve(entry.target);
-// }
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section_hidden');
+  observer.unobserve(entry.target);
+}
 
-// const sectionObserver = new IntersectionObserver(appearanceSection, {
-//   root: null,
-//   threshold: 0,
-// });
+const sectionObserver = new IntersectionObserver(appearanceSection, {
+  root: null,
+  threshold: 0,
+});
 
-// allSectionsNode.forEach(item => {
-//   sectionObserver.observe(item);
-//   item.classList.add('section_hidden');
-// });
+allSectionsNode.forEach(item => {
+  sectionObserver.observe(item);
+  item.classList.add('section_hidden');
+});
 
 // Header observer
 
@@ -99,4 +103,25 @@ btnHideAlbum.addEventListener('click', () => {
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('active');
   burgerContainer.classList.toggle('burger__nav_active');
+  document.body.classList.toggle('body_hidden');
 });
+
+// Modal window
+btnOrderIntro.addEventListener('click', showPopup);
+btnPopupClose.addEventListener('click', hidePopup);
+overlay.addEventListener('click', hidePopup);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') hidePopup();
+});
+
+function showPopup() {
+  document.body.style.overflow = 'hidden';
+  popup.style.display = 'block';
+  overlay.style.display = 'block';
+}
+
+function hidePopup() {
+  popup.style.display = 'none';
+  overlay.style.display = 'none';
+  document.body.style.overflow = '';
+}

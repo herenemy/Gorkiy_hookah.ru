@@ -234,6 +234,25 @@
         font-size: 18px;
     }
 
+    /* popup */
+    .popup {
+        width: 400px;
+        height: 500px;
+    }
+
+    /* .popup__close span:before, 
+    .popup__close span:after {
+        left: 160px;
+    } */
+
+    .popup__title {
+        font-size: 30px;
+    }
+
+    .contact__link a {
+        font-size: 25px;
+    }
+
     /* title */
     .section__title_footer {
         margin-bottom: 20px;
@@ -481,6 +500,19 @@
 
     .grid-responsive {
         height: 800px;
+    }
+
+    /* popup */
+    .popup {
+        width: 90%;
+    }
+
+    .popup__title {
+        font-size: 25px;
+    }
+
+    .contact__link a {
+        font-size: 18px;
     }
 
     /* title */

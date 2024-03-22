@@ -1,11 +1,12 @@
 .btn {
+    text-align: center;
+    outline: none; 
+    border: none;
     border-radius: 10px;
     background-color: #171717;
     color: #fff;
-    text-align: center;
-    transition: all .2s ease;
-    outline: none;
     cursor: pointer;
+    transition: all .2s ease;
 }
 
 .btn_short {
@@ -81,6 +82,7 @@
     backdrop-filter: blur(12px);
     border: none;
     border-radius: 100px;
+    opacity: 0.2;
     z-index: 10;
 }
 

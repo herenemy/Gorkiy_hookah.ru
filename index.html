@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="src/assets/css/album.css">
     <link rel="stylesheet" href="src/assets/css/footer.css">
     <link rel="stylesheet" href="src/assets/css/burger.css">
+    <link rel="stylesheet" href="src/assets/css/popup.css">
     <link rel="stylesheet" href="src/assets/css/responsive.css">
 
 
@@ -45,6 +46,7 @@
 
 
 <body>
+    <div class="overlay"></div>
 
     <header class="header nav_sticky">
         <div class="container">
@@ -94,7 +96,7 @@
             <div class="container">
                 <div class="intro__inner">
                     <div class="order-btn__container">
-                        <a href="https://wa.me/+905539321774" target="_blank" class="btn btn__order_intro">забронировать стол</a>
+                        <button class="btn btn__order_intro">забронировать стол</button>
                     </div>
 
                     </div>
@@ -116,7 +118,7 @@
                                   <a href="https://2gis.ru/kurgan/search/%D0%B3%D0%BE%D1%80%D1%8C%D0%BA%D0%B8%D0%B9/firm/70000001083415355/65.34347%2C55.4362" target="_blank" class="btn btn_short btn_about">Посмотреть на карте</a>
                             </div>
                         <div class="about__col about-video">
-                            <video autoplay muted loop src="src/assets/videos/food-video.MOV"></video>
+                            <video autoplay muted loop src="src/assets/videos/interior.MOV"></video>
                         </div>
 
                 </div>
@@ -1322,6 +1324,28 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="popup">
+        <div class="popup__inner">
+            <div class="popup__item">
+                <div class="popup__content">
+                    <div class="popup__close">
+                        <span></span>
+                    </div>
+                    <h2 class="popup__title">Забронировать столик</h2>
+                    <div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis atque dolorem voluptatum eaque dolorum.</div>
+                    <div class="contact__link">
+                        <a href="https://wa.me/+905539321774">Написать на Whatsapp</a>
+                    </div>
+                    <div class="contact__link">
+                        <a href="call:+905539321774">Позвонить нам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 
     <button class="btn-scroll-to-top">
