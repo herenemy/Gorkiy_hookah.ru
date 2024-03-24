@@ -1,3 +1,5 @@
+*{outline:1px solid red;} 
+
 @media(max-width: 1275px) {
     .grid__wrapper {
         height: 600px;
@@ -13,6 +15,8 @@
     .btn_menu {
         padding: 15px 21px;
     }
+
+   
 }
 
 @media(max-width: 990px) {
@@ -108,7 +112,7 @@
     .footer__contact{
         margin-bottom: 25px;
     }
-
+    
     /* btn */ 
     .btn_menu {
         padding: 12px 10px;
@@ -163,6 +167,12 @@
     .section__title_menu {
         margin-bottom: 25px;
     }
+
+    .offer__title {
+        line-height: 50px;
+        width: 100%;
+        height: 20%;
+    }
     /* btn */
     .btn-scroll-to-top img {
         width: 35px;
@@ -177,6 +187,10 @@
     }
     .footer__contact{
         margin-bottom: 25px;
+    }
+    .offer__title{
+        font-size: 25px;
+        line-height: 25px;
     }
 }
 
