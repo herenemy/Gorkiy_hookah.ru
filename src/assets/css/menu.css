@@ -80,7 +80,7 @@
      justify-content: space-between;
 }
 
-.dish__content_coctal{
+.dish__content_coctail{
     padding: 0 10px;
     height: 140px;
     display: flex;
@@ -136,23 +136,23 @@
     font-size: 22px;
 }
 
-.dish__name-coctal{
+.dish__name-coctail{
     padding-top: 10px;
     font-size: 14px;
 }
 
-.menu__wrapper-coctal{
+.menu__wrapper-coctail{
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.dish__item-coctal{
+.dish__item-coctail{
     height: 365px;
 }
 
-.dish__content_coctal{
+.dish__content_coctail{
     padding: 0 10px;
     height: 140px;
     display: flex;

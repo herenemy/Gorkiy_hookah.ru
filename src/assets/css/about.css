@@ -21,7 +21,7 @@
 }
 
 .about__col p {
-   font-size: 30px;
+   font-size: 18px;
    font-weight: 100;
    margin-bottom: 40px;
    letter-spacing: 2px; 
@@ -30,4 +30,5 @@
 
 .about__col video {
     height: 700px;
+    border-radius: 10px;
 }
