@@ -25,14 +25,13 @@
 .btn__order_intro {
     padding: 25px 100px;
     font-family: var(--font-noto-display);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .btn__order_intro:hover {
-    border: 1px #000 solid;
     background-color: #fff;
     color: #000;
 }
@@ -58,6 +57,14 @@
     background-color: #000;
     color: #fff;
 } 
+
+.btn_slider {
+    display: inline-block;
+    margin-bottom: 35px;
+    cursor: auto;
+    background-color: #fff;
+    color: #000;
+}
 
 .btn_footer:hover {
     background-color: #fff;
@@ -93,4 +100,16 @@
 .btn_about:hover{
     color: #000;
     background-color: #fff;
+}
+
+@media (hover: hover) {
+    button:hover {
+        background-color: #fff;
+    }
+}
+
+@media (hover: none) {
+    button:active {
+        background-color: #fff;
+    }
 }

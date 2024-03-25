@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
   },
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   loop: false,
   spaceBetween: 10,
   keyboard: {
@@ -17,15 +17,15 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    600: {
-      slidesPerView: 2,
-    },
-    900: {
-      slidesPerView: 3,
-    },
-  },
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1,
+  //   },
+  //   600: {
+  //     slidesPerView: 2,
+  //   },
+  //   900: {
+  //     slidesPerView: 3,
+  //   },
+  // },
 });

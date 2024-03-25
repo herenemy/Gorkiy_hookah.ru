@@ -38,16 +38,14 @@
 
 .grid__wrapper_dropdown {
 	display: grid; 
+	height: 2000px;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	/* gap: 10px; */
-	height: 2000px;
- }
+}
 
  .grid_active {
 	display: block;
 } 
-   
 
 #grid-1 {
     background: url(../img/album/food/food-11.jpg) no-repeat center / cover;
