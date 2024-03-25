@@ -15,8 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 50%;
+    width: 600px;
     background-color: #171717;
     z-index: 115;
 }
@@ -33,13 +32,15 @@
 }
 
 .popup__title {
-    margin: 25px 0;
+    margin: 25px 0 65px 0;
     font-size: 35px;
     text-transform: uppercase;
 }
 
 .popup__text {
-    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 65px;
 }
 
 .contact__link a {
@@ -47,6 +48,10 @@
     text-transform: uppercase;
     color: #fff;
 }
+
+.contact__link:hover a {
+    text-decoration: underline;
+} 
 
 .contact__link {
     margin-bottom: 15px 

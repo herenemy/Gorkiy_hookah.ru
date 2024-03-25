@@ -241,11 +241,6 @@
         height: 500px;
     }
 
-    /* .popup__close span:before, 
-    .popup__close span:after {
-        left: 160px;
-    } */
-
     .popup__title {
         font-size: 30px;
     }
@@ -301,11 +296,6 @@
     .burger-container {
         margin: 11px 15px 0 0;
     }
-
-    /* intro */
-    /* .intro__section-bg {
-        height: 240px;
-    } */
 
     /* about */
     .about__col p {
@@ -440,7 +430,6 @@
 
     .btn_active {
         background-color: transparent;
-        /* text-decoration: underline; */
         color: #fff;
     }
 
@@ -450,10 +439,6 @@
     .about__col p{
         font-size: 20px;
     }
-
-    /* .btn-scroll-to-top {
-        right: 5px;
-    } */
 }
 
 @media(max-width: 464px) {
@@ -601,7 +586,4 @@
     .about__col p{
         font-size: 18px;
     }
-    /* .footer__col{
-        text-align: center;
-    } */
 } 

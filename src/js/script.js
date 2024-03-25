@@ -1,20 +1,20 @@
 'use strict';
 
-const header = document.querySelector('.header');
-const sectionIntro = document.querySelector('.section_intro');
-const navLinksContainer = document.querySelector('.nav__items');
-const allSectionsNode = document.querySelectorAll('.appearance-section');
-const btnShowAlbum = document.getElementById('btnAlbumShow');
-const btnHideAlbum = document.getElementById('btnAlbumHide');
-const albumContainer = document.querySelector('.grid__dropdown-inner');
-const btnShowAlbumContainer = document.getElementById('btnAlbumShowContainer');
-const btnOrderIntro = document.querySelector('.btn__order_intro');
-const btnScrollToTop = document.querySelector('.btn-scroll-to-top');
-const burgerContainer = document.querySelector('.burger-nav__inner');
-const burgerMenu = document.querySelector('.burger');
-const popup = document.querySelector('.popup');
-const btnPopupClose = document.querySelector('.popup__close');
-const overlay = document.querySelector('.overlay');
+const header = document.querySelector('.header'),
+  sectionIntro = document.querySelector('.section_intro'),
+  navLinksContainer = document.querySelector('.nav__items'),
+  allSectionsNode = document.querySelectorAll('.appearance-section'),
+  btnShowAlbum = document.getElementById('btnAlbumShow'),
+  btnHideAlbum = document.getElementById('btnAlbumHide'),
+  albumContainer = document.querySelector('.grid__dropdown-inner'),
+  btnShowAlbumContainer = document.getElementById('btnAlbumShowContainer'),
+  btnOrderIntro = document.querySelector('.btn__order_intro'),
+  btnScrollToTop = document.querySelector('.btn-scroll-to-top'),
+  burgerContainer = document.querySelector('.burger-nav__inner'),
+  burgerMenu = document.querySelector('.burger'),
+  popup = document.querySelector('.popup'),
+  btnPopupClose = document.querySelector('.popup__close'),
+  overlay = document.querySelector('.overlay');
 
 btnScrollToTop.addEventListener('click', goTotop);
 
@@ -106,7 +106,7 @@ burgerMenu.addEventListener('click', () => {
   document.body.classList.toggle('body_hidden');
 });
 
-// Modal window
+// Popup
 btnOrderIntro.addEventListener('click', showPopup);
 btnPopupClose.addEventListener('click', hidePopup);
 overlay.addEventListener('click', hidePopup);

@@ -51,13 +51,4 @@ function createCards(resource) {
       }
     });
   });
-
-  // resource.foodCategoryName.forEach(item => {
-  //   menuWrapper.forEach(wrapper => {
-
-  //   });
-  //   // menuWrapper.innerHTML += `
-
-  //   // `;
-  // });
 }

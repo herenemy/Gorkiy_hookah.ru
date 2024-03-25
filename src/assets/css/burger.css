@@ -76,9 +76,6 @@
 }
 
 .burger__nav_active {
-    /* position: fixed;
-    top: 0;
-    right: 0; */
     padding: 10px 5px 10px 20px;
     height: 460px;
     display: flex;
