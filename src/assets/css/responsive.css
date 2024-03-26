@@ -89,6 +89,16 @@
         height: 300px;
     }
 
+    /* Modal */
+    .popup,
+    .popup__content {
+        height: 450px;
+    }
+
+    .popup {
+        width: 720px;
+    } 
+
     /* title */
     .section__title {
         font-size: 50px;
@@ -164,6 +174,38 @@
 
     iframe {
         height: 200px;
+    }
+
+    /* modal */
+    .popup,
+    .popup__content {
+        height: 330px;
+    }
+
+    .popup {
+        width: 550px;
+    }
+
+    .popup__content {
+        padding: 20px;
+    }
+
+    .popup__title {
+        margin: 35px 0 35px 0;
+        font-size: 30px;
+    }
+
+    .contact__link {
+        margin-bottom: 25px;
+    }
+
+    .contact__link a {
+        font-size: 14px;
+    }
+
+    .popup__close {
+        top: -4px;
+        right: 3px;
     }
 
     /* title */
@@ -248,7 +290,7 @@
     }
 
     /* popup */
-    .popup {
+    /* .popup {
         width: 400px;
         height: 500px;
     }
@@ -259,7 +301,7 @@
 
     .contact__link a {
         font-size: 25px;
-    }
+    } */
 
     /* title */
     .section__title_footer {
@@ -383,10 +425,6 @@
         display: none;
     }
 
-    /* .slider__suptitle {
-        font-size: 25px;
-    } */
-
     .slider__description {
         font-size: 20px;
     }
@@ -398,6 +436,23 @@
 
     .grid-responsive {
         height: 1000px;
+    }
+
+    /* poppup */
+    .popup {
+        width: 90%;
+    }
+
+    .popup__col {
+        width: 100%;
+    }
+
+    .popup__img-container {
+        display: none;
+    }
+
+    .contact__link a {
+        font-size: 21px;
     }
 
     /* title */
@@ -517,9 +572,9 @@
     }
 
     /* album */
-    .grid__wrapper {
+    /* .grid__wrapper {
         height: 200px;
-    }
+    } */
 
     .grid-responsive {
         height: 800px;
@@ -535,7 +590,7 @@
     }
 
     .contact__link a {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     /* title */
@@ -629,6 +684,11 @@
 
     .about__col p{
         font-size: 18px;
+    }
+
+    /* popup */
+    .contact__link a {
+        font-size: 12px;
     }
 
     /* btn */
