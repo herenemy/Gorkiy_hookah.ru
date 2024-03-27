@@ -16,7 +16,7 @@ async function getResource(url) {
 function createCards(resource) {
   menuWrapper.forEach(wrapper => {
     const foodCategoryName = wrapper.getAttribute('data-menu');
-    console.log(foodCategoryName);
+    // console.log(foodCategoryName);
 
     resource[foodCategoryName].forEach(item => {
       if (foodCategoryName === 'fashionCoctail') {
