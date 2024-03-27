@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (foodCategoryName === 'fashionCoctail') {
           wrapper.innerHTML += `
           <li class="dish__item dish__item-coctail">
-                <img src="${item.photo}" alt="">
+                <img loading="lazy" src="${item.photo}" alt="">
                 <div class="dish__content dish__content_coctail">
                     <div class="dish__name dish__name-coctail">${item.title}</div>
                     <div class="dish-small-in">${item.name}</div>
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
           wrapper.innerHTML += `
           <li class="dish__item">
-                    <img src="${item.photo}" alt="">
+                    <img loading="lazy" src="${item.photo}" alt="">
                     <div class="dish__content">
                         <div class="dish__name">${item.name}</div>
                         <div class="dish__small-text">
