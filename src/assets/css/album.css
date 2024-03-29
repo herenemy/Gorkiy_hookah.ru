@@ -48,12 +48,12 @@
 } 
 
 #grid-1 {
-    background: url(../img/album/food/food-11.jpg) no-repeat center / cover;
+    background: url(../img/album/food/food-11.webp) no-repeat center / cover;
 	grid-area: 1 / 1 / 3 / 3;
 }
 
 #grid-2 {
-    background: url(../img/album/food/food-2.jpg) no-repeat center / cover;
+    background: url(../img/album/food/food-2.webp) no-repeat center / cover;
 	grid-area: 1 / 5 / 2 / 6;
 }
 
@@ -77,7 +77,7 @@
 	grid-area: 2 / 3 / 3 / 4;
 }
 #grid-7 {
-    background: url(../img/album/food/food-30.jpg) no-repeat center / cover;
+    background: url(../img/album/food/food-30.webp) no-repeat center / cover;
 	grid-area: 4 / 2 / 5 / 4;
 }
 
@@ -88,7 +88,7 @@
   
   #drop-down-grid-1 {
 	grid-area: 1 / 4 / 2 / 6;
-	background: url(../img/album/food/food-1.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-1.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-2 {
@@ -98,12 +98,12 @@
   
   #drop-down-grid-3 {
 	grid-area: 1 / 2 / 2 / 3;
-	background: url(../img/album/food/food-30.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/tom-yum.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-4 {
 	grid-area: 2 / 2 / 4 / 4;
-	background: url(../img/album/food/food-24.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-24.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-5 {
@@ -113,7 +113,7 @@
   
   #drop-down-grid-6 {
 	grid-area: 3 / 4 / 4 / 5;
-	background: url(../img/album/food/food-5.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-5.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-7 {
@@ -123,17 +123,17 @@
   
   #drop-down-grid-8 {
 	grid-area: 3 / 1 / 4 / 2;
-	background: url(../img/album/food/food-8.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-8.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-9 {
 	grid-area: 4 / 3 / 5 / 5;
-	background: url(../img/album/food/food-19.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-19.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-10 {
 	grid-area: 4 / 1 / 6 / 3;
-	background: url(../img/album/food/food-27.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-27.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-11 {
@@ -143,7 +143,7 @@
   
   #drop-down-grid-12 {
 	grid-area: 5 / 4 / 6 / 6;
-	background: url(../img/album/food/food-23.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-23.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-13 {
@@ -163,7 +163,7 @@
   
   #drop-down-grid-16 {
 	grid-area: 8 / 1 / 10 / 3;
-	background: url(../img/album/food/food-29.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-29.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-17 {
@@ -173,7 +173,7 @@
   
   #drop-down-grid-18 {
 	grid-area: 8 / 4 / 9 / 6;
-	background: url(../img/album/food/food-12.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-12.webp) no-repeat center / cover; 
 }
   
   #drop-down-grid-19 {
@@ -183,5 +183,5 @@
   
   #drop-down-grid-20 {
 	grid-area: 9 / 4 / 10 / 5;
-	background: url(../img/album/food/food-17.jpg) no-repeat center / cover; 
+	background: url(../img/album/food/food-17.webp) no-repeat center / cover; 
 }

@@ -5,35 +5,35 @@
       "price": "350",
       "portionType": "gr",
       "portion": "350",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/chicken-rice.webp"
     },
     {
       "name": "Паста карбонара",
       "price": "330",
       "portionType": "gr",
       "portion": "250",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/carbonara.webp"
     },
     {
       "name": "Паста с лососем и песто",
       "price": "450",
       "portionType": "gr",
       "portion": "300",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/salmon-pasta.webp"
     },
     {
-      "name": "Мак энд чиз с пармезано",
+      "name": "Мак энд чиз с пармезаном",
       "price": "330",
       "portionType": "gr",
       "portion": "300",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/mac&cheese.webp"
     },
     {
       "name": "Стейк из форели с бэби картофелем и стручковой фасолью",
       "price": "590",
       "portionType": "gr",
       "portion": "320",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/trout-steak.webp"
     },
     {
       "name": "Медальон из свинины с картофельным пюре и сливочно-грибным соусом",
@@ -56,28 +56,28 @@
       "price": "260",
       "portionType": "gr",
       "portion": "180",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/roastbeef-bruschetta.webp"
     },
     {
       "name": "Брускетта с лососем",
       "price": "340",
       "portionType": "gr",
       "portion": "180",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/salmon-bruschetta.webp"
     },
     {
       "name": "Хот - дог BBQ",
       "price": "220",
       "portionType": "gr",
       "portion": "300",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/hot-dog-bbq.webp"
     },
     {
       "name": "Хот - дог классический",
       "price": "220",
       "portionType": "gr",
       "portion": "300",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/hot-dog.webp"
     }
   ],
   "salads": [
@@ -93,21 +93,21 @@
       "price": "360",
       "portionType": "gr",
       "portion": "210",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/salmon-salad.webp"
     },
     {
       "name": "Цезарь с курицей",
       "price": "290",
       "portionType": "gr",
       "portion": "175",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/chicken-caesar.webp"
     },
     {
       "name": "Цезарь с креветками",
       "price": "350",
       "portionType": "gr",
       "portion": "175",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/shrimp-caesar.webp"
     }
   ],
   "soups": [
@@ -116,7 +116,7 @@
       "price": "390",
       "portionType": "ml",
       "portion": "380",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/tom-yum.webp"
     },
     {
       "name": "Рамен с говядиной",
@@ -245,7 +245,7 @@
       "price": "250",
       "portionType": "ml",
       "portion": "250",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/lemonade-mango-passion-fruit.webp"
     },
     {
       "name": "Малина - Пан",
@@ -601,7 +601,7 @@
       "price": "350",
       "portionType": "ml",
       "portion": "150",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/negroni.webp"
     },
     {
       "name": "Апероль - Шприц",
@@ -646,7 +646,7 @@
       "price": "400",
       "portionType": "ml",
       "portion": "200",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/coctail-1.webp"
     },
     {
       "title": "#2",
@@ -654,7 +654,7 @@
       "price": "400",
       "portionType": "ml",
       "portion": "150",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/coctail-2.webp"
     },
     {
       "title": "#3",
@@ -662,7 +662,7 @@
       "price": "400",
       "portionType": "ml",
       "portion": "150",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/coctail-3.webp"
     },
     {
       "title": "#4",
@@ -670,7 +670,7 @@
       "price": "450",
       "portionType": "ml",
       "portion": "150",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/food-10.webp"
     },
     {
       "title": "#5",
@@ -678,7 +678,7 @@
       "price": "450",
       "portionType": "ml",
       "portion": "300",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/food/food-10.webp"
     },
     {
       "title": "#6",
@@ -686,7 +686,7 @@
       "price": "450",
       "portionType": "ml",
       "portion": "150",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/coctail-6.webp"
     },
     {
       "title": "#7",
@@ -694,7 +694,7 @@
       "price": "450",
       "portionType": "ml",
       "portion": "150",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/coctail-7.webp"
     },
     {
       "title": "#8",
@@ -702,7 +702,7 @@
       "price": "400",
       "portionType": "ml",
       "portion": "200",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/coctail-8.webp"
     },
     {
       "title": "#9",
@@ -710,7 +710,7 @@
       "price": "450",
       "portionType": "ml",
       "portion": "250",
-      "photo": "src/assets/img/album/food/food-10.jpg"
+      "photo": "src/assets/img/album/coctails/coctail-9.webp"
     }
   ]
 }

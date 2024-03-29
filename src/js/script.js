@@ -20,10 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   btnScrollToTop.addEventListener('click', goTotop);
 
   function goTotop() {
-    if (window.scrollY > 0) {
-      window.scrollBy(0, -50);
-      setTimeout(goTotop, 0);
-    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   console.log(window.scrollY);
